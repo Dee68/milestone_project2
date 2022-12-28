@@ -32,10 +32,15 @@
         <!-- user registration form -->
         <div class="user-registration" id="register">
             <h3>Please, enter a username to begin the Dizzy quiz application.</h3>
-            <form autocomplete="off">
-                <input type="text" name="username" id="username" required minlength="2" placeholder="Enter UserName Here">
-                <button type="submit" id="register" onsubmit="startQuiz()">submit</button>
+            <form autocomplete="off" method="get" id="register-form">
+                <input type="text" name="username" id="username" required minlength="2" maxlength="8" placeholder="Enter UserName Here">
+                <button type="submit" id="register">submit</button>
             </form>
+        </div>
+        <!-- thank you section -->
+        <div id="welcome" class="thanks">
+            <h2>Thank you <span id="user"></span> for registering, you can now start the game</h2>
+            <button id="thank-you" onclick="goQuiz()">Start Quiz</button>
         </div>
         <!-- Quiz -->
         <div id="quiz" class="tests">
@@ -43,49 +48,60 @@
             <header>
             <div class="quiz-box">
                 <div class="title">Quick Quiz Application</div>
-                <div class="timer">
-                    <div class="time-text">Time Left</div>
-                    <div class="timer-sec">00</div>
+                <div id="timer">
+                    <div id="time-text">Time Left</div>
+                    <div id="timer-sec">00</div>
                 </div>
              </div>
             </header>
             <!-- quiz questions -->
             <section id="quiz-questions">
-                <div class="questions">
-                    <span>Question1</span>
-                </div>
-                <div class="option-list">
+                <!-- <div class="questions">
+                    <span id="question-num"> </span>
+                    <span id="question-text"></span>
+                </div> -->
+                <!-- <div class="option-list">
                     <div class="option">
-                        <span>Answer1</span>
+                        <span id="answer1" class="answers" onclick="boxClicked()"></span>
                         <div class="icon tick"><i class="fas fa-check"></i></div>
                     </div>
                     <div class="option">
-                        <span>Answer2</span>
+                        <span id="answer2" class="answers" onclick="boxClicked()"></span>
                         <div class="icon cross"><i class="fas fa-times"></i></div>
                     </div>
                     <div class="option">
-                        <span>Answer3</span>
+                        <span id="answer3" class="answers" onclick="boxClicked()"></span>
                         <div class="icon cross"><i class="fas fa-times"></i></div>
                     </div>
                     <div class="option">
-                        <span>Answer4</span>
+                        <span id="answer4" class="answers" onclick="boxClicked()"></span>
                         <div class="icon cross"><i class="fas fa-times"></i></div>
                     </div>
-                </div>
+                </div> -->
             </section>
             <!-- quiz footer -->
             <footer>
-                <div class="total-questions">
-                    <span><p>1</p> of <p>5</p>Questions</span>
+                <div class="total-questions" id="total">
+                    <!-- <span><p>1</p> of <p>10</p>Questions</span> -->
                 </div>
-                <button class="next">Next Question</button>
+                <button class="next" id="nextQ" onclick="nextQuestion()">Next Question</button>
             </footer>
 
+        </div>
+        <!-- feedback or results -->
+        <div id="feed-back">
+            <i class="fas fa-meh-rolling-eyes"></i>
+            <i class="fas fa-trophy"></i>
+            <h4>You have completed the quiz</h4>
+            <h4 id="points">You got 5 out of 10</h4>
+            <button id="exit">Quit Quit</button>
+            <button id="start-again">Start Again</button>
         </div>
     </div>
     <!-- fontawesome -->
     <script src="https://kit.fontawesome.com/9273c684b9.js" crossorigin="anonymous"></script>
-    
+
+    <script src="assets/js/qusetion.js"></script>
     <script src="assets/js/script.js"></script>
 </body>
 </html>
