@@ -251,7 +251,7 @@ function quizLevel2(){
     
 }
 
-let exitBtn = document.getElementById('exit');
+//let exitBtn = document.getElementById('exit');
 
 // exit quiz and return back to start page
 function returnHome(){
@@ -260,7 +260,7 @@ function returnHome(){
     start.classList.add('active');
 }
 
-exitBtn.addEventListener('click', returnHome, false);
+//exitBtn.addEventListener('click', returnHome, false);
 
 
 
