@@ -108,6 +108,11 @@ function countTime(timer){
         if (timer < 0) {
             clearInterval(counter);
             timeSec.textContent = "00";
+        // disable all  options when time runs out
+            for (let i = 0; i < options.length; i++) {
+                options[i].classList.add('disabled');  
+            }
+        nextQ.style.display = 'block';
         }
     }
 }
@@ -117,14 +122,14 @@ function countTime(timer){
 function loadQuestion(index){
     let quesTag = `<div class="questions">
     <span id="question-num">${DzQuiz[qlevel][index].num +'.'}</span>
-    <span id="question-text">${DzQuiz[0][index].question}</span></div>
+    <span id="question-text">${DzQuiz[qlevel][index].question}</span></div>
     <div class="option-list">
                     <div class="option">
                         <span id="answer1" class="answers">${DzQuiz[qlevel][index].choices[0]}</span>
                         <div class="icon"></div>
                     </div>
                     <div class="option">
-                        <span id="answer2" class="answers">${DzQuiz[0][index].choices[1]}</span>
+                        <span id="answer2" class="answers">${DzQuiz[qlevel][index].choices[1]}</span>
                         <div class="icon"></div>
                     </div>
                     <div class="option">
@@ -194,18 +199,21 @@ function nextQuestion(){
     const  user = localStorage.getItem('username');
     const correctAnswer = localStorage.getItem('correctAnswer');
     let feedtag;
-    if (correctAnswer >= 5) {
+    if ((qlevel == 0 && correctAnswer >= 5) || (qlevel == 1 &&correctAnswer >= 10)) {
         feedtag = `
         <i class="fas fa-trophy"></i>
         <h4>Hi ${user} you have completed the quiz</h4>
-        <h4 id="points">You got ${correctAnswer} out of 10</h4>
-        <button id="exit" onclick="returnHome()">Quit Quiz</button>
-        <button id="move-up" onclick="quizLevel2()">Next Level</button>`;
+        <h4 id="points">You got ${correctAnswer} out of ${(qlevel+1)*10}</h4>
+        <button id="exit" onclick="returnHome()">Quit Quiz</button>`;
+        if (qlevel == 0) {
+            feedtag += `<button id="move-up" onclick="quizLevel2()">Next Level</button>`;
+        }
+        
         
     } else {
         feedtag = `<i class="fas fa-meh-rolling-eyes"></i>
             <h4>Hi ${user} you have completed the quiz</h4>
-            <h4 id="points">You got ${correctAnswer} out of 10</h4>
+            <h4 id="points">You got ${correctAnswer} out of ${(qlevel+1)*10}</h4>
             <button id="exit" onclick="returnHome()">Quit Quiz</button>
             <button id="start-again">Start Again</button>`; 
     }
@@ -224,30 +232,23 @@ function nextQuestion(){
         start.classList.remove('active');
         feedBack.innerHTML = feedtag;
         feedBack.classList.add('reveal');
-        // console.log('questions completed');
+        
     }
 }
 
 let moveUp = document.getElementById('move-up');
 
 function quizLevel2(){
-    feedBack.classList.remove('reveal');
-    // start.classList.remove('active');
-    // start.classList.add('inactive');
+    feedBack.classList.remove('reveal');//hide
     quiz.classList.add('active');//show
-    qlevel = level[1];
+    qlevel = level[1];//level 2
     timer = qLevelTime[1];
     questC = 1;
     index = 0;
-    //questCounter(questC);
-    //loadQuestion(index);
-    //goQuiz();
     countTime(timer);
     //show question with answers
     loadQuestion(index);
     questCounter(questC);
-    optionSelected(answ);
-    //quiz.classList.add('active');
     
 }
 

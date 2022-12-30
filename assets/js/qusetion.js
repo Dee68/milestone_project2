@@ -42,24 +42,24 @@ let DzQuiz  = [
         answer: "body{color:black;}"
     },
     {   num: 5,
-        question: "How do you insert a comment in a CSS file ?",
+        question: "How do you add a background color for all <h1> elements ?",
         choices:[
-        "/* this is a comment */",
-        " //This is a comment ",
-        " <!-- This is a comment --> ",
-        " //This is a comment // ",
+        "h1.all {background-color:#FFFFFF;}",
+        "all.h1 {background-color:#FFFFFF;}",
+        "h1 {background-color:#FFFFFF;}",
+        "all.h1 {color-background:#FFFFFF;}",
         ],
-        answer: "/* this is a comment */"
+        answer: "h1 {background-color:#FFFFFF;}"
     },
     {   num: 6,
-        question: "How do you insert a comment in an HTML file ?",
+        question: "Which CSS property is used to change the text color of an element ?",
         choices:[
-        " /* this is a comment */ ",
-        " //This is a comment ",
-        " <!-- This is a comment --> ",
-        " //This is a comment // ",
+        "text-color",
+        "color",
+        "fgcolor",
+        "color-text",
         ],
-        answer: "<!-- This is a comment -->"
+        answer: "color"
     },
     {   num: 7,
         question: "Which property is used to change the background color in CSS ?",
@@ -72,17 +72,17 @@ let DzQuiz  = [
         answer: "background-color" 
     },
     {   num: 8,
-        question: "Inside which HTML tag do we put the javascript ?",
+        question: "Which CSS property controls the text size ?",
         choices:[
-        " '<javascript></javascript>' ",
-        "'<js></js>'",
-        "'<script></script>'",
-        "'<scripting>'",
+        "font-size",
+        "text-size",
+        "size",
+        "font-style",
         ],
-        answer: "<script></script>"
+        answer: "font-size"
     },
     {   num: 9,
-        question: "Which attributes are neccessary for the <img> tag in HTML ?",
+        question: "Which attributes are neccessary for the &lt;img&gt; tag in HTML ?",
         choices:[
         "alt and data",
         "data and source",
@@ -92,78 +92,78 @@ let DzQuiz  = [
         answer: "src and alt"
     },
     {   num: 10,
-        question: "How do you insert a comment in an HTML file ?",
+        question: "How do you display hyperlinks without an underline ?",
         choices:[
-        "/* this is a comment */",
-        "//This is a comment",
-        "<!-- This is a comment -->",
-        "//This is a comment //",
+        "a {underline:none;}",
+        "a {text-decoration:none;} ",
+        "a {decoration:no-underline;}",
+        "a {text-decoration:no-underline;}",
         ],
-        answer: "<!-- This is a comment -->"
+        answer: "a {text-decoration:none;} "
     }
     ],
     
     [
         {   num: 1,
-            question: "What does HTML stand for ?",
+            question: "The HTML &lt;canvas&gt; element is used to: ?",
             choices:[ 
-            "Hyperlinks and Text Markup Language",
-            "Hyper Text Markup Language",
-            "hyper Text Making Languaage",
-            "Hyper Text Make Language",
+            "draw graphics",
+            "manipulate data in MySQL",
+            "display database records",
+            "create draggable elements",
             ],
-            answer: "Hyperlinks and Text Markup Language"
+            answer: "draw graphics"
         },
         {   num: 2,
-            question: "What does CSS stand for?",
+            question: "In HTML, which attribute is used to specify that an input field must be filled out",
             choices:[
-            "Colourful Style Sheet",
-            "Creative Style Sheet",
-            "Cascading Style Sheet",
-            "Computer Style Sheeet",
+            "placeholder",
+            "validate",
+            "required",
+            "formvalidate",
             ],
-            answer: "Cascading Style Sheet"
+            answer: "required"
     
         },
         {   num: 3,
-            question: "What does XML stand for ?",
+            question: "Which input type defines a slider control ?",
             choices:[
-            "Extensible Markup Language",
-            "Executable Multiple Language",
-            "Extra Multi Program Language",
-            "Examine Multi Language",
+            "slider",
+            "controls",
+            "gauge",
+            "range",
             ],
-            answer: "Extensible Markup Language"
+            answer: "range"
         },
         {   num: 4,
-            question: "Which is the correct CSS synthax ?",
+            question: "Which HTML attribute is used to define inline styles ?",
             choices:[
-            "body{color:black;}",
-            "{body{color:black;}",
-            "body=color:black;",
-            "body:{color=black}",
+            "style",
+            "class",
+            "styles",
+            "font",
             ],
-            answer: "body{color:black;}"
+            answer: "style"
         },
         {   num: 5,
-            question: "How do you insert a comment in a CSS file ?",
+            question: "Who is making the web standards ?",
             choices:[
-            "/* this is a comment */",
-            " //This is a comment ",
-            " <!-- This is a comment --> ",
-            " //This is a comment // ",
+            "Microsoft",
+            "Google",
+            "The World Wide Web Consortium",
+            "Mozilla",
             ],
-            answer: "/* this is a comment */"
+            answer: "The World Wide Web Consortium"
         },
         {   num: 6,
-            question: "How do you insert a comment in an HTML file ?",
+            question: "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed ?",
             choices:[
-            " /* this is a comment */ ",
-            " //This is a comment ",
-            " <!-- This is a comment --> ",
-            " //This is a comment // ",
+            "longdesc",
+            "alt",
+            "src",
+            "title",
             ],
-            answer: "<!-- This is a comment -->"
+            answer: "alt"
         },
         {   num: 7,
             question: "Which property is used to change the background color in CSS ?",
@@ -176,17 +176,17 @@ let DzQuiz  = [
             answer: "background-color" 
         },
         {   num: 8,
-            question: "Inside which HTML tag do we put the javascript ?",
+            question: "In HTML, onblur and onfocus are: ?",
             choices:[
-            " '<javascript></javascript>' ",
-            "'<js></js>'",
-            "'<script></script>'",
-            "'<scripting>'",
+            "Style attributes",
+            "HTML elements",
+            "Can only be used in Javascript",
+            "Event attributes",
             ],
-            answer: "<script></script>"
+            answer: "Event attributes"
         },
         {   num: 9,
-            question: "Which attributes are neccessary for the <img> tag in HTML ?",
+            question: "Which attributes are neccessary for the &lt;img&gt; tag in HTML ?",
             choices:[
             "alt and data",
             "data and source",
@@ -196,14 +196,14 @@ let DzQuiz  = [
             answer: "src and alt"
         },
         {   num: 10,
-            question: "How do you insert a comment in an HTML file ?",
+            question: "Graphics defined by SVG is in which format ?",
             choices:[
-            "/* this is a comment */",
-            "//This is a comment",
-            "<!-- This is a comment -->",
-            "//This is a comment //",
+            "HTML",
+            "XML",
+            "CSS",
+            "Javascript",
             ],
-            answer: "<!-- This is a comment -->"
+            answer: "XML"
         }
 
     ]

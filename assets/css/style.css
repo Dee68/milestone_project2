@@ -21,22 +21,26 @@ body {
 
 /* start button */
 .start-btn,.popup,.user-registration,.tests,.thanks {
+    margin: 0;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%,-50%); 
 }
+.start-btn {
+    width: 16%;
+    height: 8vh;   
+}
 .start-btn #start {
-    width: 250px;
-    height: 70px;
+    width: 100%;  /*   250px; */
+    height: 100%;/*70px; */
     text-align: center;
     text-transform: uppercase;
-    padding: 20px 0;
+    padding: 16px 0;
     border: 1px solid #3a3a3a;
     box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.3);
     border-radius: 15px;
-    outline: none;
-    font-size: 25px;
+    font-size: 23px;
     font-weight: 700;
     color: #3a3a3a;
     background-color: azure;
@@ -89,7 +93,7 @@ body {
 /* quiz rules */
 .popup,.tests {
     height: auto;
-    width: 580px;
+    width: 40%;/*580px; */
     padding: 20px;
     background-color: rgba(217,188,169, 0.7);
     border-radius: 5px;
@@ -162,8 +166,8 @@ body {
 /* user regitration form */
 .user-registration {
     height: auto;
-    width: 580px;
-    padding: 20px;
+    width: 40%;/*580px;*/
+    padding: 25px;
     background-color: rgba(217,188,169, 0.7);
     border-radius: 5px;
     border-left: 1px solid #7C4E29;
@@ -197,13 +201,14 @@ body {
 }
 .user-registration form input {
     width: 60%;
-    height: 40px;
+    height: 14%;/*40px;*/
     padding: 20px 5px;
     margin: 10px 0;
     border-radius: 4px;
     line-height: 30px;
     text-align: center;
-    font-size: 25px;
+    font-size: 110%;
+    font-weight: 500;
     color: #3a3a3a;
     background-color: #f0f8ff;
     border: 1px solid #7C4E29;
@@ -214,13 +219,14 @@ body {
 }
 .user-registration form button {
     width: 30%;
-    height: 40px;
+    height: auto;/*40px;*/
     padding: 5px 5px;
     margin: 15px 4px;
     border-radius: 4px; 
     line-height: 30px;
     text-align: center;
-    font-size: 25px;
+    font-size: 110%;
+    font-weight: 500;
     background-color: #7C4E29;
     color: #f0f8ff;
 }
