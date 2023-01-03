@@ -64,8 +64,9 @@ body {
     height: auto;
     width: auto;
     padding: 20px;
-    background-color: rgba(72,165,166,0.7);/*#48A5A6;*/
+    background-color: rgba(72,165,166,0.7);
     border-radius: 5px;
+    box-shadow: 10px 10px 10px  rgba(72, 165, 166, 0.5);
     border-left: 1px solid #48A5A6;
     border-right: 1px solid #48A5A6;
     border-bottom: 1px solid #48A5A6;
@@ -78,6 +79,7 @@ body {
 }
 .thanks h2 {
     margin-bottom: 30px;
+    color: #f0f8ff;
 }
 .thanks span {
     color: green;
@@ -91,7 +93,7 @@ body {
     text-transform: uppercase;
     padding: 10px 0;
     border: 1px solid #3F817E;
-    box-shadow: 5px 5px 5px 5px rgba(72, 165, 166, 0.5);
+    box-shadow: 5px 5px 5px rgba(72, 165, 166, 0.5);
     border-radius: 10px;
     margin: 0 auto;
     font-size: 20px;
@@ -112,6 +114,7 @@ body {
     padding: 20px;
     background-color: rgba(72,165,166, 0.7);
     border-radius: 5px;
+    box-shadow: 15px 10px 10px rgba(72, 165, 166, 0.5);
     border-left: 1px solid #48A5A6;;
     border-right: 1px solid #48A5A6;;
     border-bottom: 1px solid #48A5A6;;
@@ -140,12 +143,15 @@ body {
 }
 #rules h2 {
     color: #f0f8ff;
+    padding: 10px 0;
+    margin-bottom: 20px;
     border-bottom: 1px solid #48A5A6;
 }
 #rules h3 {
     color: #f0f8ff;
     font-size: 20px;
-    margin-top: 5px;
+    padding: 10px 0;
+    margin-top: 10px;
     display: flex;
 }
 #rules h3 span {
@@ -185,6 +191,7 @@ body {
     padding: 25px;
     background-color: rgba(72, 165, 166, 0.5);
     border-radius: 5px;
+    box-shadow: 10px 10px 10px rgba(72, 165, 166, 0.5);
     border-left: 1px solid #48A5A6;
     border-right: 1px solid #48A5A6;
     border-bottom: 1px solid #48A5A6;
@@ -202,7 +209,7 @@ body {
     transform: translate(-50%,-50%) scale(1);
 }
 .user-registration h3 {
-    color: #202620;
+    color: #f0f8ff;
     font-size: 20px;
     font-weight: bold;
     margin-bottom: 10px;
@@ -216,7 +223,7 @@ body {
 }
 .user-registration form input {
     width: 60%;
-    height: 14%;/*40px;*/
+    height: 14%;
     padding: 20px 5px;
     margin: 10px 0;
     border-radius: 4px;
@@ -224,7 +231,7 @@ body {
     text-align: center;
     font-size: 110%;
     font-weight: 500;
-    color: #202620;
+    color: #a5afa5;
     background-color: #f0f8ff;
     border: 1px solid #48A5A6;
 }
@@ -234,10 +241,11 @@ body {
 }
 .user-registration form button {
     width: 30%;
-    height: auto;/*40px;*/
+    height: auto;
     padding: 5px 5px;
     margin: 15px 4px;
     border-radius: 4px; 
+    box-shadow: 5px 5px 5px  rgba(72, 165, 166, 0.5);
     line-height: 30px;
     text-align: center;
     font-size: 110%;
@@ -247,7 +255,7 @@ body {
 }
 .user-registration form button:hover {
     background-color: #48A5A6;
-    border: 1px solid #48A5A6;
+    border: 1px solid #3F817E;
     color: #f0f8ff;
 }
 /* quiz */
@@ -310,6 +318,7 @@ body {
     margin: 0 10px 0 5px;
     font-size: 22px;
     font-weight: 600;
+    color: #f0f8ff;
 }
 #quiz-questions .option-list {
     padding: 20px 0;
@@ -396,6 +405,7 @@ body {
     justify-content: space-between;
     padding: 0 30px;
     align-items: center;
+    color: #f0f8ff;
 }
 #quiz footer .total-questions span {
     display: flex;

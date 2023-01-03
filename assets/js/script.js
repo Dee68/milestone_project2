@@ -209,9 +209,6 @@ const DzQuiz  = [
     ]
 
 ];
-//import { DzQuiz } from "./qusetion";
-localStorage.setItem('username', 'username');
-localStorage.setItem('correctAnswer', 'correct');
 let start = document.getElementById('start');
 // rules div
 let rules = document.getElementById('rules');
@@ -282,6 +279,13 @@ rForm.addEventListener('submit', function(e){
     
 });
 
+//thank you button
+let thankYou = document.getElementById('thank-you');
+thankYou.addEventListener('click', function(e){
+    if(e == 'click'){
+        goQuiz();
+    }
+});
 // quiz div
 let quiz = document.getElementById('quiz');
 // Start Quiz after registration and welcome message.
@@ -303,6 +307,11 @@ let questions = document.getElementById('quiz-questions');
 // next button
 let totalQ = document.getElementById('total');
 let nextQ = document.getElementById('nextQ');
+nextQ.addEventListener('click', function(e){
+    if (e == 'click') {
+        nextQuestion();        
+    }
+})
 
 //answer option buttons
 let options = document.getElementsByClassName('option');
@@ -320,9 +329,10 @@ let interval = 0;
 let counter;
 let correct = 0;
 let questC = 1;
+localStorage.setItem('username', 'username');
+localStorage.setItem('correctAnswer', 'correct');
 
 qlevel = level[0];
-
 
 
 //footer question of questions
@@ -448,12 +458,13 @@ function nextQuestion(){
         }
         
         
-    } else if (qlevel == 1 &&correctAnswer >= 10){
+    } else if (qlevel == 1 && correctAnswer >= 10){
         feedtag = `
         <i class="fas fa-trophy"></i>
         <h4>Hi ${user}, congratulations you are good.</h4>
         <h4 id="points">You got ${correctAnswer} out of ${(qlevel+1)*10}</h4>
         <button id="exit" onclick="returnHome()">Quit Quiz</button>`;
+        
     } 
     else {
         feedtag = `<i class="fas fa-meh-rolling-eyes"></i>
@@ -499,8 +510,6 @@ function startAgain(){
 }
 
 
-
-//let exitBtn = document.getElementById('exit');
 
 // exit quiz and return back to start page
 function returnHome(){
