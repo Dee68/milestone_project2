@@ -79,6 +79,11 @@ body {
 .thanks h2 {
     margin-bottom: 30px;
 }
+.thanks span {
+    color: green;
+    font-size: 120%;
+    text-transform: capitalize;
+}
 .thanks #thank-you {
     width: 140px;
     height: 45px;
