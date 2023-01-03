@@ -19,6 +19,16 @@ body {
     align-items: center;
     justify-content: center;
 }
+.container h1 {
+    display: flex;
+    top: 10px;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    font-size: 280%;
+    color: #3F817E;
+    
+}
 
 /* start button */
 .start-btn,.popup,.user-registration,.tests,.thanks {
