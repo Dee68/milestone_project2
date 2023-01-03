@@ -1,8 +1,239 @@
+const DzQuiz  = [
+    [
+    {   num: 1,
+        question: "What does HTML stand for ?",
+        choices:[ 
+        "Hyperlinks and Text Markup Language",
+        "Hyper Text Markup Language",
+        "hyper Text Making Languaage",
+        "Hyper Text Make Language",
+        ],
+        answer: "Hyperlinks and Text Markup Language"
+    },
+    {   num: 2,
+        question: "What does CSS stand for?",
+        choices:[
+        "Colourful Style Sheet",
+        "Creative Style Sheet",
+        "Cascading Style Sheet",
+        "Computer Style Sheeet",
+        ],
+        answer: "Cascading Style Sheet"
+
+    },
+    {   num: 3,
+        question: "What does XML stand for ?",
+        choices:[
+        "Extensible Markup Language",
+        "Executable Multiple Language",
+        "Extra Multi Program Language",
+        "Examine Multi Language",
+        ],
+        answer: "Extensible Markup Language"
+    },
+    {   num: 4,
+        question: "Which is the correct CSS synthax ?",
+        choices:[
+        "body{color:black;}",
+        "{body{color:black;}",
+        "body=color:black;",
+        "body:{color=black}",
+        ],
+        answer: "body{color:black;}"
+    },
+    {   num: 5,
+        question: "How do you add a background color for all h1 elements ?",
+        choices:[
+        "h1.all {background-color:#FFFFFF;}",
+        "all.h1 {background-color:#FFFFFF;}",
+        "h1 {background-color:#FFFFFF;}",
+        "all.h1 {color-background:#FFFFFF;}",
+        ],
+        answer: "h1 {background-color:#FFFFFF;}"
+    },
+    {   num: 6,
+        question: "Which CSS property is used to change the text color of an element ?",
+        choices:[
+        "text-color",
+        "color",
+        "fgcolor",
+        "color-text",
+        ],
+        answer: "color"
+    },
+    {   num: 7,
+        question: "Which property is used to change the background color in CSS ?",
+        choices:[
+        "background-color",
+        "backgroundColor",
+        "bgColor",
+        "color-background",
+        ],
+        answer: "background-color" 
+    },
+    {   num: 8,
+        question: "Which CSS property controls the text size ?",
+        choices:[
+        "font-size",
+        "text-size",
+        "size",
+        "font-style",
+        ],
+        answer: "font-size"
+    },
+    {   num: 9,
+        question: "Which attributes are neccessary for the &lt;img&gt; tag in HTML ?",
+        choices:[
+        "alt and data",
+        "data and source",
+        "src and alt",
+        "alt and source",
+        ],
+        answer: "src and alt"
+    },
+    {   num: 10,
+        question: "How do you display hyperlinks without an underline ?",
+        choices:[
+        "a {underline:none;}",
+        "a {text-decoration:none;} ",
+        "a {decoration:no-underline;}",
+        "a {text-decoration:no-underline;}",
+        ],
+        answer: "a {text-decoration:none;} "
+    }
+    ],
+    
+    [
+        {   num: 1,
+            question: "The HTML &lt;canvas&gt; element is used to: ?",
+            choices:[ 
+            "draw graphics",
+            "manipulate data in MySQL",
+            "display database records",
+            "create draggable elements",
+            ],
+            answer: "draw graphics"
+        },
+        {   num: 2,
+            question: "In HTML, which attribute is used to specify that an input field must be filled out",
+            choices:[
+            "placeholder",
+            "validate",
+            "required",
+            "formvalidate",
+            ],
+            answer: "required"
+    
+        },
+        {   num: 3,
+            question: "Which input type defines a slider control ?",
+            choices:[
+            "slider",
+            "controls",
+            "gauge",
+            "range",
+            ],
+            answer: "range"
+        },
+        {   num: 4,
+            question: "Which HTML attribute is used to define inline styles ?",
+            choices:[
+            "style",
+            "class",
+            "styles",
+            "font",
+            ],
+            answer: "style"
+        },
+        {   num: 5,
+            question: "Who is making the web standards ?",
+            choices:[
+            "Microsoft",
+            "Google",
+            "The World Wide Web Consortium",
+            "Mozilla",
+            ],
+            answer: "The World Wide Web Consortium"
+        },
+        {   num: 6,
+            question: "Which HTML attribute specifies an alternate text for an image, if the image cannot be displayed ?",
+            choices:[
+            "longdesc",
+            "alt",
+            "src",
+            "title",
+            ],
+            answer: "alt"
+        },
+        {   num: 7,
+            question: "Which property is used to change the background color in CSS ?",
+            choices:[
+            "background-color",
+            "backgroundColor",
+            "bgColor",
+            "color-background",
+            ],
+            answer: "background-color" 
+        },
+        {   num: 8,
+            question: "In HTML, onblur and onfocus are: ?",
+            choices:[
+            "Style attributes",
+            "HTML elements",
+            "Can only be used in Javascript",
+            "Event attributes",
+            ],
+            answer: "Event attributes"
+        },
+        {   num: 9,
+            question: "Which attributes are neccessary for the &lt;img&gt; tag in HTML ?",
+            choices:[
+            "alt and data",
+            "data and source",
+            "src and alt",
+            "alt and source",
+            ],
+            answer: "src and alt"
+        },
+        {   num: 10,
+            question: "Graphics defined by SVG is in which format ?",
+            choices:[
+            "HTML",
+            "XML",
+            "CSS",
+            "Javascript",
+            ],
+            answer: "XML"
+        }
+
+    ]
+
+];
+//import { DzQuiz } from "./qusetion";
+localStorage.setItem('username', 'username');
+localStorage.setItem('correctAnswer', 'correct');
 let start = document.getElementById('start');
 // rules div
 let rules = document.getElementById('rules');
 // exit button
 let quitBtn = document.getElementById('quit');
+//second level
+let moveUp = document.getElementById('move-up');
+//next level btn clicked
+function quizLevel2(){
+    feedBack.classList.remove('reveal');//hide
+    quiz.classList.add('active');//show
+    qlevel = level[1];//level 2
+    timer = qLevelTime[1];
+    questC = 1;
+    index = 0;
+    countTime(timer);
+    //show question with answers
+    loadQuestion(index);
+    questCounter(questC);  
+}
+
+//moveUp.addEventListener('click', quizLevel2, false);
 // start button clicked
 function openPopup(){
     start.classList.add('inactive');//hides start button
@@ -26,6 +257,7 @@ let rForm = document.getElementById('register-form');
 
 let username = document.getElementById('username');
 
+
 // popup registration div,clicking continueBtn
 function userRegistration(){
     userReg.classList.add('show');//shows div
@@ -36,8 +268,7 @@ continueBtn.addEventListener('click', userRegistration, false);
 
 //thank you div/button
 let welcome = document.getElementById('welcome');
-// thank you button 
-let thankYouBtn = document.getElementById('thank-you');
+
 
 // submit form to collect username & save to local storage
 rForm.addEventListener('submit', function(e){
@@ -64,7 +295,7 @@ function goQuiz(){
     loadQuestion(index);
     questCounter(questC);
  }
-// thankYouBtn.addEventListener('click', goQuiz, false);
+
 // timer
 let timeSec = document.getElementById('timer-sec');
 // question section
@@ -80,7 +311,7 @@ let options = document.getElementsByClassName('option');
 let feedBack = document.getElementById('feed-back');
  
 // define variables for timer & correct answers & quiz level
-let qLevelTime = [15,10,10];
+let qLevelTime = [15,10];
 let level = [0,1];// 1st & 2nd level of quiz
 let qlevel;
 let index = 0;
@@ -91,6 +322,8 @@ let correct = 0;
 let questC = 1;
 
 qlevel = level[0];
+
+
 
 //footer question of questions
 function questCounter(questC){
@@ -159,14 +392,15 @@ function optionSelected(answ){
     let incorTag = `<i class="fas fa-times"></i>`;
     let correctAns = DzQuiz[qlevel][index].answer;
    
+   
     if (userAnswer.trim() == correctAns.trim()) {
-        console.log('correct');
+        //console.log('correct');
         correct++;
         answ.lastElementChild.innerHTML = corTag;
         answ.classList.remove('option');
         answ.classList.add('correct');
     } else {
-        console.log('incorrect')
+        //console.log('incorrect')
         answ.lastElementChild.innerHTML = incorTag;
         answ.classList.add('incorrect');
         //if incorrect answer automatically show correct answer
@@ -178,8 +412,9 @@ function optionSelected(answ){
             
         }
     }
-    //
-    localStorage.setItem('correctAnswer', correct);
+    //store correct answer
+     localStorage.setItem('correctAnswer', correct);
+    
 
      //stop timer
      clearInterval(interval);
@@ -195,14 +430,17 @@ function optionSelected(answ){
 
 // next button clicked
 function nextQuestion(){
-    localStorage.setItem('username', username.value);
+    
     const  user = localStorage.getItem('username');
+    
     const correctAnswer = localStorage.getItem('correctAnswer');
+    
+    
     let feedtag;
-    if ((qlevel == 0 && correctAnswer >= 5) || (qlevel == 1 &&correctAnswer >= 10)) {
+    if (qlevel == 0 && correctAnswer >= 5) {
         feedtag = `
         <i class="fas fa-trophy"></i>
-        <h4>Hi ${user} you have completed the quiz</h4>
+        <h4>Hi ${user}, congratulations you are good to go to the next level</h4>
         <h4 id="points">You got ${correctAnswer} out of ${(qlevel+1)*10}</h4>
         <button id="exit" onclick="returnHome()">Quit Quiz</button>`;
         if (qlevel == 0) {
@@ -210,12 +448,20 @@ function nextQuestion(){
         }
         
         
-    } else {
+    } else if (qlevel == 1 &&correctAnswer >= 10){
+        feedtag = `
+        <i class="fas fa-trophy"></i>
+        <h4>Hi ${user}, congratulations you are good.</h4>
+        <h4 id="points">You got ${correctAnswer} out of ${(qlevel+1)*10}</h4>
+        <button id="exit" onclick="returnHome()">Quit Quiz</button>`;
+    } 
+    else {
         feedtag = `<i class="fas fa-meh-rolling-eyes"></i>
-            <h4>Hi ${user} you have completed the quiz</h4>
+            <h4>Hi ${user}, sorry you need to brush up your skills and try again</h4>
             <h4 id="points">You got ${correctAnswer} out of ${(qlevel+1)*10}</h4>
             <button id="exit" onclick="returnHome()">Quit Quiz</button>
-            <button id="start-again">Start Again</button>`; 
+            <button id="start-again" onclick="startAgain()">Start Again</button>`; 
+               
     }
     
 
@@ -236,21 +482,23 @@ function nextQuestion(){
     }
 }
 
-let moveUp = document.getElementById('move-up');
 
-function quizLevel2(){
-    feedBack.classList.remove('reveal');//hide
-    quiz.classList.add('active');//show
-    qlevel = level[1];//level 2
-    timer = qLevelTime[1];
+//restart button clicked
+function startAgain(){
+    feedBack.classList.remove('reveal');
+    rules.classList.add('active');//show
+    // reset score
+    correct = 0;
+    qlevel = level[0];
     questC = 1;
     index = 0;
-    countTime(timer);
     //show question with answers
     loadQuestion(index);
     questCounter(questC);
     
 }
+
+
 
 //let exitBtn = document.getElementById('exit');
 
@@ -261,7 +509,6 @@ function returnHome(){
     start.classList.add('active');
 }
 
-//exitBtn.addEventListener('click', returnHome, false);
 
 
 
