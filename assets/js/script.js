@@ -306,11 +306,21 @@ let timeSec = document.getElementById('timer-sec');
 let questions = document.getElementById('quiz-questions');
 // next button
 let totalQ = document.getElementById('total');
+
 let nextQ = document.getElementById('nextQ');
 nextQ.addEventListener('click', function(e){
     if (e == 'click') {
         nextQuestion();        
     }
+})
+// leave button
+let exitBtn = document.getElementById('leave');
+// click exit button
+exitBtn.addEventListener('click', function(){
+    quiz.classList.remove('active');
+    localStorage.clear();
+    start.classList.remove('inactive');
+    start.classList.add('active');
 })
 
 //answer option buttons
@@ -320,7 +330,7 @@ let options = document.getElementsByClassName('option');
 let feedBack = document.getElementById('feed-back');
  
 // define variables for timer & correct answers & quiz level
-let qLevelTime = [15,10];
+let qLevelTime = [10,5];
 let level = [0,1];// 1st & 2nd level of quiz
 let qlevel;
 let index = 0;

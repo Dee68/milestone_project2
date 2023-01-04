@@ -152,7 +152,7 @@ body {
     font-size: 20px;
     padding: 10px 0;
     margin-top: 10px;
-    display: flex;
+    /* display: flex; */
 }
 #rules h3 span {
     color: #202620;
@@ -415,6 +415,21 @@ body {
     font-weight: 600;
     padding: 0 5px;
 }
+#quiz footer .home {
+    height: 40px;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 0 13px;
+    margin-left: 180px;
+    outline: none;
+    background-color: rgba(72,165,166, 0.7);
+    color: #f0f8ff;
+    border-radius: 5px;
+    border: 1px solid #3F817E;
+    box-shadow: 2px 3px 3px 1px rgba(72, 165, 166, 0.3);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
 #quiz footer .next {
     display: none;
     height: 40px;
@@ -512,8 +527,12 @@ body {
         font-size: 15px;
     }
 }
-/*   weeerwr */
+/*    */
 @media screen and (max-width:767px) {
+    .container h1 {
+        margin-top: 10%;
+        font-size: 180%;
+    }
     .start-btn {
         width: 35%;
         height: 10vh;   
@@ -539,5 +558,19 @@ body {
     }
     #rules .btns {
         margin-top: 175px;
+    }
+    #quiz footer .home {
+        margin-left: 180px;
+    }
+    #quiz footer .next {
+        margin-left: 5px;
+    }
+}
+/*  */
+@media screen and (min-width:1250px) {
+    .popup h3 {
+        align-items: center;
+        justify-content: center;
+        text-align: center;
     }
 }
