@@ -1,108 +1,255 @@
-![CI logo](https://codeinstitute.s3.amazonaws.com/fullstack/ci_logo_small.png)
+# Dizzy Quiz Challenge
 
-Welcome Dee68,
+### Milestone Project Two
 
-This is the Code Institute student template for Gitpod. We have preinstalled all of the tools you need to get started. It's perfectly ok to use this template as the basis for your project submissions.
+Dizzy Quiz challenge is a two level quiz challenge application,that can be extended for more levels
+Its sole aim is for entertainment and study. 
 
-You can safely delete this README.md file, or change it for your own project. Please do read it at least once, though! It contains some important information about Gitpod and the extensions we use. Some of this information has been updated since the video content was created. The last update to this file was: **September 1, 2021**
+## Demo
 
-## Gitpod Reminders
+The live site can be viewed here - [alexandra davenport](https://mitchdavenport88.github.io/MSP1/).
 
-To run a frontend (HTML, CSS, Javascript only) application in Gitpod, in the terminal, type:
+GitHub repository can be viewed here - [mitchdavenport88/MSP1](https://github.com/mitchdavenport88/MSP1).
 
-`python3 -m http.server`
+![Site Mockup](readme-attachments/ami.responsivedesign.is(1).jpg)
 
-A blue button should appear to click: _Make Public_,
+## UX
 
-Another blue button should appear to click: _Open Browser_.
+### Strategy
+The aim is to improve the current site by streamlining the existing one by removing irrelevant information and 
+sections to find a balance between an artistic / professional aesthetic and feel.
 
-To run a backend Python file, type `python3 app.py`, if your Python file is named `app.py` of course.
+Reasons for the site:
+* Self-promotion.
+* To show her portfolio / body of work to others.
+* To help people get in touch with her.
 
-A blue button should appear to click: _Make Public_,
+### User Stories
+1. I’m a curator who is planning an upcoming exhibition and I’ve been pointed towards Alex - 
+I’d now like to see some examples of her work. I’d also like to find out abit about her and see what other exhibitions 
+she has been involved in. I like what I see and want to get in touch with her to discuss my upcoming exhibition.
 
-Another blue button should appear to click: _Open Browser_.
+2. I’m a student who is taught by Alex. As an aspiring artist I’d like to see her work and use this as inspiration for my 
+upcoming projects. I spend a lot of time on social media and I’d like to follow Alex on Instagram as I like her work. 
+I can also use her posts as research for my university work and keep an eye out for upcoming shows and exhibitions.
 
-In Gitpod you have superuser security privileges by default. Therefore you do not need to use the `sudo` (superuser do) command in the bash terminal in any of the lessons.
+3. I’ve recently seen some of Alex’s work at a gallery and would like to see more. I’d like to be informed of upcoming 
+projects, exhibitions and news so follow her on social media and also subscribe to a mailing list.
 
-To log into the Heroku toolbelt CLI:
+### Scope - Functionality
+* The site must be easy to navigate around.
+* Unlike most artist's websites it must be well presented and visually appealing.
+* Be minimalistic to reflect her work.
+* Function as expected.
 
-1. Log in to your Heroku account and go to *Account Settings* in the menu under your avatar.
-2. Scroll down to the *API Key* and click *Reveal*
-3. Copy the key
-4. In Gitpod, from the terminal, run `heroku_config`
-5. Paste in your API key when asked
+### Scope - Content
+As we are using this site to self-promote we need to meet these requirements:
+* Tell the audience who we are and what we do.
+* Show the audience our work.
+* List where we are showing work and where we’ve shown work.
+* Show features in the press we’ve had.
+* Make it easy to get in touch by email, social media or contact form.
 
-You can now use the `heroku` CLI program - try running `heroku apps` to confirm it works. This API key is unique and private to you so do not share it. If you accidentally make it public then you can create a new one with _Regenerate API Key_.
+I'd like the work section to be more like an online portfolio; with each project having a page to itself 
+talking about the project in more detail and showing more images, videos and sketches but in more structured and user 
+friendly way than currently done.
 
-------
+Alex has selected 12 projects that she’d like to continue displaying – meaning an additional 12 pages, which isn’t feasible 
+or necessary at this time. We can keep this to one page for the time being and show an image that represents each project 
+with the intention of this section of the site evolving over time. This would lead us to adding more pages (a page for each 
+project) in the future, which will add more content and context to each project and the current work page acting as a 
+visual contents page, linking to each of these project pages.
 
-## Release History
+### Structure
+Based on the content required in the scope this website will consist of 4 pages:
+* A home / landing page, which will feature an image of Alex’s work.
+* An about page, telling the user about Alex’s work and her work / exhibition history.
+* Work page – as touched upon in the scope will show examples of Alex’s work with the view of extending this over time.
+* Contact (contact form).
 
-We continually tweak and adjust this template to help give you the best experience. Here is the version history:
+The site will have navigational links in the sidebar (on desktops) and in the header and footer (on tablet and mobile 
+devices), which will feature on each page. Not only will this create a better space for displaying information but meaning 
+the site will be easy to navigate around whilst the user will have access to her Instagram, the option to email Alex and 
+to subscribe to her newsletter (via mailchimp) at any point.
 
-**September 1 2021:** Remove `PGHOSTADDR` environment variable.
+### Skeleton
+* Initial idea - [sketch](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/wireframe%20-%20sketch.jpg?raw=true).
+* Home wireframes - [desktop](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/home%20_%20landing.png?raw=true) / 
+[mobile](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/home%20_%20landing%20(mobile).png?raw=true).
+* About wireframes - [desktop](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/about.png?raw=true) / 
+[mobile](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/about%20(mobile).png?raw=true).
+* Work wireframes - [desktop](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/work.png?raw=true) / 
+[mobile](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/work%20(mobile).png?raw=true).
+* Contact wireframes - [desktop](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/contact.png?raw=true) / 
+[mobile](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/contact%20(mobile).png?raw=true).
 
-**July 19 2021:** Remove `font_fix` script now that the terminal font issue is fixed.
+### Surface
+I’ve spoken about creating balance between an artistic and professional aesthetic throughout this site, implementing a 
+minimalistic feel which I feel is suited to a website of this kind. 
 
-**July 2 2021:** Remove extensions that are not available in Open VSX.
+Aesthetically I’ve liked the idea of a fixed side bar from the get go, so I plan on having this on every page with links 
+to the other pages on here. A logo and a footer containing social media links will also feature at the top and bottom of 
+this side bar, meaning you can access any page or contact details quickly and from any other page on the site. This side bar 
+will collapse to a drop down menu in the header with the social links remaining at the foot of the page on smaller devices.
 
-**June 30 2021:** Combined the P4 and P5 templates into one file, added the uptime script. See the FAQ at the end of this file.
+In keeping which my minimalistic approach I’ve chosen to use two colours that contrast one another and will use these 
+throughout - #FAFAFA (white) and #366788 (blue), which I found using [ColorHunt.](https://colorhunt.co/) A lot of the images 
+I plan on using are light in colour – so the white complements these whilst the blue offers a contrast where needed. I’m 
+also planning on using the google font “Inter”, which is a sans-serif font similar to what she uses now. This imported 
+google font along with the use of letter spacing in my CSS will help me achieve this professional and artistic look. 
 
-**June 10 2021:** Added: `font_fix` script and alias to fix the Terminal font issue
+The imagery used throughout this site will be a reflection on Alex herself being a photographer / artist first and foremost. 
+The background of the home / landing page will be a full size image of Alex performing. A large image will also be used 
+on the contact page as I feel it’s important to showcase her work where possible – I want the images to do the work really 
+and add content and context where applicable. All Imagery will be supplied by Alex.
 
-**May 10 2021:** Added `heroku_config` script to allow Heroku API key to be stored as an environment variable.
+## Features
 
-**April 7 2021:** Upgraded the template for VS Code instead of Theia.
+### Page layout
+* Each page has been split into two sections; navigation and content. The navigation part of the page remains the same on 
+all four pages with only the active classes on the menu changing.
+* The content section of each page differs and features content relevant to that page.
+* Responsive at all breakpoints. The page layout will change to something more suited to smaller devices when needed. 
+Navigational elements are then housed in a dropdown menu found at the top of the page alongside the logo. Social links remain 
+at the foot of the page while content is shown between them.
 
-**October 21 2020:** Versions of the HTMLHint, Prettier, Bootstrap4 CDN and Auto Close extensions updated. The Python extension needs to stay the same version for now.
+### Navigational
+* Navigational elements are laid out the same regardless of what page you’re on.
+* The logo is always in the top left of the page. This also has a secondary function as a link back to the home page. 
+* Navigation links on lg devices are shown in the side bar on the left of the page.
+* On md and smaller devices these links are housed in a dropdown menu found top right in the header next to the logo, 
+where you’d expect to find it. The menu will toggle on/off on the press of a button, which you’d also expect. The button 
+features the Font Awesome icon “fa-bars”, which is associated with this function. 
+* I’ve put an active class on page links, which will underline and make the link bolder to inform the 
+user of what page they are on.
+* I've also used a hover class on the navigation links, which enlarges the text when hovered over, encouraging interaction.
+* Icons represent the social links at the foot of the page. Each icon is associated with the intended 
+destination and clicking them will send the user there via a new window/tab. I’ve used the same hover class feature on 
+these again to encourage interaction. 
 
-**October 08 2020:** Additional large Gitpod files (`core.mongo*` and `core.python*`) are now hidden in the Explorer, and have been added to the `.gitignore` by default.
+### Home
+* Features an image from Alex’s most known collection of work: Circuit Training (exercises in self-doubt). This fills 
+the entire content container.
 
-**September 22 2020:** Gitpod occasionally creates large `core.Microsoft` files. These are now hidden in the Explorer. A `.gitignore` file has been created to make sure these files will not be committed, along with other common files.
+### About
+* An image will appear in the top left of the content container. This has a matching text box overlay that’s used throughout 
+the work content. This image is responsive as it gets hidden on small devices.
+* Text will appear inline with image when the image is displayed. Once the image is hidden this text will fill the width 
+of the page.
+* The quote has slightly larger font and will stand out more as I’ve used a background colour and inverted the colours.
+* The exhibition and press lists are styled the same as the quote but are broken up by headings; breaking up 
+any big blocks of colour. 
+* Any list items that have external links have a similar hover class found on the navigation links, which enlarges the 
+text when hovered over, encouraging interaction.
 
-**April 16 2020:** The template now automatically installs MySQL instead of relying on the Gitpod MySQL image. The message about a Python linter not being installed has been dealt with, and the set-up files are now hidden in the Gitpod file explorer.
+### Work
+* Images are displayed in a masonry grid using column counts. The number of columns required will depend on screen 
+size, making the content responsive. 
+* The title of each piece of work is overlaid over each image, maintaining the look and feel of the site. 
 
-**April 13 2020:** Added the _Prettier_ code beautifier extension instead of the code formatter built-in to Gitpod.
+### Contact
+* The background of this page is another image of Circuit Training (exercises in self-doubt).
+* Contact form is clearly shown in the fore-ground. This form fills the full screen width at a smaller breakpoint to 
+make it suitable for smaller devices. 
+* The form is set to `method=“POST”` and will send the data to the code institute form dump at the moment.
+* Form inputs use `type=“text”` or `type=“email”` to accept inputs of that type only. All inputs are labelled and have
+a `placeholder` so it’s clear what goes into each field.
+* Text-area provides a space where a user can write a message to Alex. 
+* Submit button is clearly labelled and changes colour when hovered over / pressed.
+* All inputs are set to `required` so no empty forms can be sent.
 
-**February 2020:** The initialisation files now _do not_ auto-delete. They will remain in your project. You can safely ignore them. They just make sure that your workspace is configured correctly each time you open it. It will also prevent the Gitpod configuration popup from appearing.
+### Features left to implement
+* As mentioned in the scope I’d like to develop the work section of the site into more of an online portfolio, 
+with each page having its own individual page. This page would give more details about Alex’s work and include more 
+imagery, videos and sketches. The existing work page will act as a visual contents page – directing users to each 
+individual project page.
 
-**December 2019:** Added Eventyret's Bootstrap 4 extension. Type `!bscdn` in a HTML file to add the Bootstrap boilerplate. Check out the <a href="https://github.com/Eventyret/vscode-bcdn" target="_blank">README.md file at the official repo</a> for more options.
 
-------
+## Technologies
 
-## FAQ about the uptime script
+* HTML & CSS.
+* Gitpod (IDE).
+* Git, GitHub, GitHub Pages. Used for version control, hosting my repository and hosting my site.
+* [Balsamiq.](https://balsamiq.com/) Used for drawing the wireframes.
+* [Bootstrap (v5.0).](https://getbootstrap.com/) Used for grid layout, responsive design and basic styling in some instances.
+* [Font Awesome](https://fontawesome.com/).
+* [Google Fonts](https://fonts.google.com/).
+* JavaScript. Used to make the dropdown menu work on smaller devices. 
+* [tinypng.com.](https://tinypng.com/) Compressed the image files used throughout.
+* [Am I Responsive?.](http://ami.responsivedesign.is/) Produced the mock-up shown above.
+* [Beautifer.](https://beautifier.io/) Cleaned up my code.
+* W3C [HTML](https://validator.w3.org/) & [CSS](https://jigsaw.w3.org/css-validator/) validator.
+* [AutoPrefixer.](https://autoprefixer.github.io/) Validated CSS for additional browsers.
 
-**Why have you added this script?**
+## Testing
 
-It will help us to calculate how many running workspaces there are at any one time, which greatly helps us with cost and capacity planning. It will help us decide on the future direction of our cloud-based IDE strategy.
+Separate testing document can be found here - [testing.md.](TESTING.md)
 
-**How will this affect me?**
+## Deployment
 
-For everyday usage of Gitpod, it doesn’t have any effect at all. The script only captures the following data:
+### Adding and committing files
+I’ve been using Gitpod to write my code and using the terminal within to add, commit and push code from my workspace to 
+GitHub where it is stored remotely as shown in the course content. 
 
-- An ID that is randomly generated each time the workspace is started.
-- The current date and time
-- The workspace status of “started” or “running”, which is sent every 5 minutes.
+1. When I have made a couple of minor additions / changes or one large change or addition I add the file in question to 
+the staging area by typing in the terminal `git add .` the full stop will add all new files. If I want to be more 
+selective I can type in the file name e.g. index.html or the files pathway e.g. assets/css/style.css instead of the full 
+stop.
+2. I now want to save my changes to the local repository by typing `git commit –m “ ”` into the terminal. Between the “ ” 
+I'll write a concise message detailing what this commit has done.
+3. When I either want to upload all my changes for the day or view on GitHub Pages I push all the commits I’ve previously 
+done to GitHub using the `git push` command. When GitHub Pages is set up for the repository in question it will automatically 
+pick up these changes and display the most up to date version that has been pushed.
 
-It is not possible for us or anyone else to trace the random ID back to an individual, and no personal data is being captured. It will not slow down the workspace or affect your work.
+### Deploying to GitHub Pages
+1. Once logged into GitHub I navigated to my MSP1 repository via my repositories.
+2. Selected settings in the menu at the top of the screen.
+3. I scrolled down to the section 'GitHub Pages' near the bottom of the page.
+4. Under 'Source' I changed the dropdown so it read Branch:master as this is the branch I'm using.
+5. The page refreshes, meaning this was successful. Changes do take a while to take effect.
+6. To retrieve the link I had to go back to the GitHub pages section via settings (like in step 3) where it's displayed.
 
-**So….?**
+### Cloning
+Taken from GitHub's documentation on cloning, which can be found 
+[here](https://docs.github.com/en/github/creating-cloning-and-archiving-repositories/cloning-a-repository#cloning-a-repository-to-github-desktop).
 
-We want to tell you this so that we are being completely transparent about the data we collect and what we do with it.
+1. Once logged into GitHub, navigate to the repository you wish to clone.
+2. Next to the green Gitpod button there's a button that reads code, click this. 
+3. To clone the repository using HTTPS, copy the link whilst HTTPS is selected.
+4. Open your local IDE of choice and open the terminal.
+5. Navigate to the working directory of where you want the cloned directory to be.
+6. Type `git clone` in the terminal and then paste the link that you selected in step 3. Press enter.
+7. The clone is created in your current working directory (`cwd`).
 
-**Can I opt out?**
+## Credits
 
-Yes, you can. Since no personally identifiable information is being captured, we'd appreciate it if you let the script run; however if you are unhappy with the idea, simply run the following commands from the terminal window after creating the workspace, and this will remove the uptime script:
+### Content
+* All text was taken from Alex’s existing site.
+* All images were also supplied by Alex. 
 
-```
-pkill uptime.sh
-rm .vscode/uptime.sh
-```
+### Code
+* I used [Bootstrap (v5.0)](https://getbootstrap.com/) for grid layout, responsive design and simple styling.
+* The original drop down menu used for navigation on smaller devices was taken from 
+[W3schools](https://www.w3schools.com/css/css_dropdowns.asp). I've kept some of the CSS from this.
+* During testing it was suggested I changed my drop down menu to another one also found on 
+[W3schools](https://www.w3schools.com/bootstrap4/bootstrap_navbar.asp) as it funtion's better.
+* The basic code to achieve the masonry grid on the work page was taken from 
+[css-tricks](https://css-tricks.com/seamless-responsive-photo-grid/).
+* To refresh my memory on forms I watched the following on
+[YouTube](https://www.youtube.com/watch?app=desktop&v=GMH3rNTN4IQ&t=579s). I used the basic code shown on this as a Skeleton 
+and built off this adding my own labels, id's and writing the css to style the form.
+* I disabled the resizable property of text area used on the contact form by using this code on the 
+[Tutorial Republic](https://www.tutorialrepublic.com/faq/how-to-disable-resizable-property-of-textarea-using-css.php).
 
-**Anything more?**
-
-Yes! We'd strongly encourage you to look at the source code of the `uptime.sh` file so that you know what it's doing. As future software developers, it will be great practice to see how these shell scripts work.
-
----
-
-Happy coding!
+### Acknowledgements
+* Alex Davenport again for allowing me to do this site based on her and supplying the content.
+* [SophieKahn.net](https://www.sophiekahn.net/) inspired the fixed side bar that I used.
+* Jim_Lynx's [MS1 Planning Session on YouTube](https://youtu.be/sH0m9N875SU).
+* Tutor support at Code Institute for their help when required.
+* Brian Macharia for the feedback in my mentor sessions and aiding in the planning and execution of this site.
+* Ciaran Brady, Jade Quinn and Stefan Carter for taking the time to look at my site and giving feedback via 
+slack's #peer-code-review channel.
+* README examples - [AJGreaves](https://github.com/AJGreaves/portrait-artist/blob/master/README.md) / 
+[Haley Schafer](https://github.com/Code-Institute-Solutions/StudentExampleProjectGradeFive/blob/master/README.md) / 
+[crypticCaroline](https://github.com/crypticCaroline/ms1-plantfactory/blob/master/README.md).
+* README template - [CodeInstitute.](https://github.com/Code-Institute-Solutions/readme-template)
