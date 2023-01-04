@@ -2,7 +2,7 @@
 
 ### Milestone Project Two
 
-Dizzy Quiz challenge is a two level quiz challenge application,that can be extended for more levels
+Dizzy Quiz challenge is a two level quiz challenge application,that can be extended for more levels.
 Its sole aim is for entertainment and study. 
 
 ## Demo
@@ -72,7 +72,8 @@ devices), which will feature on each page. Not only will this create a better sp
 the site will be easy to navigate around whilst the user will have access to her Instagram, the option to email Alex and 
 to subscribe to her newsletter (via mailchimp) at any point.
 
-### Skeleton
+- ### Wireframes
+![wireframes](readImg/wireframe.png)
 * Initial idea - [sketch](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/wireframe%20-%20sketch.jpg?raw=true).
 * Home wireframes - [desktop](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/home%20_%20landing.png?raw=true) / 
 [mobile](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/home%20_%20landing%20(mobile).png?raw=true).
