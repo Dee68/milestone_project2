@@ -214,8 +214,7 @@ let start = document.getElementById('start');
 let rules = document.getElementById('rules');
 // exit button
 let quitBtn = document.getElementById('quit');
-//second level
-let moveUp = document.getElementById('move-up');
+
 //next level btn clicked
 function quizLevel2(){
     feedBack.classList.remove('reveal');//hide
@@ -230,22 +229,19 @@ function quizLevel2(){
     questCounter(questC);  
 }
 
-//moveUp.addEventListener('click', quizLevel2, false);
 // start button clicked
 function openPopup(){
     start.classList.add('inactive');//hides start button
     rules.classList.add('active'); // shows rules of quiz div
 }
 start.addEventListener('click', openPopup, false);
-
+   
 // hides rules div, quitBtn clicked
 function closePopup(){
     rules.classList.remove('active');
     start.classList.remove('inactive');//shows start button
 }
 quitBtn.addEventListener('click', closePopup, false);
-//continue button
-let continueBtn = document.getElementById('continue');
 
 // user registration div
 let userReg = document.getElementById('register');
@@ -253,7 +249,8 @@ let userReg = document.getElementById('register');
 let rForm = document.getElementById('register-form');
 
 let username = document.getElementById('username');
-
+//continue button
+let continueBtn = document.getElementById('continue');
 
 // popup registration div,clicking continueBtn
 function userRegistration(){
@@ -265,17 +262,33 @@ continueBtn.addEventListener('click', userRegistration, false);
 
 //thank you div/button
 let welcome = document.getElementById('welcome');
+// function to validate user input
+function validateName(){
+    let regEx = /^[A-Za-z]+$/;
+    if (username.value == '' || !(username.value.match(regEx))) {
+        //alert user
+        username.focus();
+        return false;
+        
+    } else {
+        return true;
+    }
+}
 
-
+let msg = document.getElementById('message');
 // submit form to collect username & save to local storage
 rForm.addEventListener('submit', function(e){
     e.preventDefault();
     //console.log(username.value);
-    localStorage.setItem('username', username.value);
-    const  user = localStorage.getItem('username');
-    document.getElementById('user').textContent = user;
-    welcome.classList.add('active');//show
-    userReg.classList.remove('show');//hide
+    if (validateName()) {
+        localStorage.setItem('username', username.value);
+        const  user = localStorage.getItem('username');
+        document.getElementById('user').textContent = user;
+        welcome.classList.add('active');//show
+        userReg.classList.remove('show');//hide
+    }
+    //alert user
+    msg.classList.add('alert');
     
 });
 
@@ -312,7 +325,7 @@ nextQ.addEventListener('click', function(e){
     if (e == 'click') {
         nextQuestion();        
     }
-})
+});
 // leave button
 let exitBtn = document.getElementById('leave');
 // click exit button

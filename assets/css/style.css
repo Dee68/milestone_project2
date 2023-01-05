@@ -29,7 +29,7 @@ body {
     color: #3F817E;
     
 }
-
+ 
 /* start button */
 .start-btn,.popup,.user-registration,.tests,.thanks {
     margin: 0;
@@ -258,6 +258,45 @@ body {
     border: 1px solid #3F817E;
     color: #f0f8ff;
 }
+/* Message */
+/* #message  i {
+    color: #f0f8ff;
+    position: relative;
+    left: 50%;
+} */
+.error {
+    height: auto;
+    width: 30%;
+    padding: 20px;
+    background-color: rgba(72,165,166, 0.7);
+    border-radius: 5px;
+    box-shadow: 15px 10px 10px rgba(72, 165, 166, 0.5);
+    border-left: 1px solid #48A5A6;;
+    border-right: 1px solid #48A5A6;;
+    border-bottom: 1px solid #48A5A6;;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%,-50%) scale(0.1);
+    visibility: hidden;
+    transition: transform 0.4s, top 0.4s;
+}
+.alert {
+    top: 30%;
+    visibility: visible;
+    transform: translate(-50%,-30%) scale(1);
+    color:#f0f8ff;
+}
+.closebtn {
+    margin-left: 10px;
+    color: white;
+    font-weight: bold;
+    float: right;
+    font-size: 22px;
+    line-height: 20px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
 /* quiz */
 
 #quiz .quiz-box {
