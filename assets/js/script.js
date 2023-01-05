@@ -1,3 +1,4 @@
+/*jshint esversion: 8 */
 const DzQuiz  = [
     [
     {   num: 1,
@@ -209,11 +210,11 @@ const DzQuiz  = [
     ]
 
 ];
-let start = document.getElementById('start');
+const start = document.getElementById('start');
 // rules div
-let rules = document.getElementById('rules');
+const rules = document.getElementById('rules');
 // exit button
-let quitBtn = document.getElementById('quit');
+const quitBtn = document.getElementById('quit');
 
 //next level btn clicked
 function quizLevel2(){
@@ -244,13 +245,13 @@ function closePopup(){
 quitBtn.addEventListener('click', closePopup, false);
 
 // user registration div
-let userReg = document.getElementById('register');
+const userReg = document.getElementById('register');
 
-let rForm = document.getElementById('register-form');
+const rForm = document.getElementById('register-form');
 
-let username = document.getElementById('username');
+const username = document.getElementById('username');
 //continue button
-let continueBtn = document.getElementById('continue');
+const continueBtn = document.getElementById('continue');
 
 // popup registration div,clicking continueBtn
 function userRegistration(){
@@ -267,6 +268,7 @@ function validateName(){
     let regEx = /^[A-Za-z]+$/;
     if (username.value == '' || !(username.value.match(regEx))) {
         //alert user
+        msg.classList.add('alert');
         username.focus();
         return false;
         
@@ -287,8 +289,7 @@ rForm.addEventListener('submit', function(e){
         welcome.classList.add('active');//show
         userReg.classList.remove('show');//hide
     }
-    //alert user
-    msg.classList.add('alert');
+    
     
 });
 
@@ -475,8 +476,9 @@ function nextQuestion(){
         <i class="fas fa-trophy"></i>
         <h4>Hi ${user}, congratulations you are good to go to the next level</h4>
         <h4 id="points">You got ${correctAnswer} out of ${(qlevel+1)*10}</h4>
-        <button id="exit" onclick="returnHome()">Quit Quiz</button>`;
+        <button id="exit" class="next" onclick="returnHome()">Quit Quiz</button>`;
         if (qlevel == 0) {
+            // exBtn.style.display = 'block';
             feedtag += `<button id="move-up" onclick="quizLevel2()">Next Level</button>`;
         }
         
@@ -515,7 +517,7 @@ function nextQuestion(){
         
     }
 }
-
+let start_Again = document.getElementById('start-again');
 
 //restart button clicked
 function startAgain(){
@@ -532,17 +534,19 @@ function startAgain(){
     
 }
 
-
-
+start_Again.addEventListener('click',function(){
+    startAgain();
+})
+let exBtn = document.getElementById('exit');
 // exit quiz and return back to start page
 function returnHome(){
     feedBack.classList.remove('reveal');
     start.classList.remove('inactive');
     start.classList.add('active');
 }
+exBtn.addEventListener('click', returnHome, false);
 
 
 
 
     
-
