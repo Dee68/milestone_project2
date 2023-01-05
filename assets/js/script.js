@@ -1,4 +1,5 @@
 /*jshint esversion: 8 */
+/* exported quizLevel2,returnHome,optionSelected,startAgain */
 const DzQuiz  = [
     [
     {   num: 1,
@@ -216,6 +217,51 @@ const rules = document.getElementById('rules');
 // exit button
 const quitBtn = document.getElementById('quit');
 
+//continue button
+const continueBtn = document.getElementById('continue');
+//thank you div
+const welcome = document.getElementById('welcome');
+//thank you button
+const thankYou = document.getElementById('thank-you');
+//message div
+const msg = document.getElementById('message');
+// quiz div
+const quiz = document.getElementById('quiz');
+// user registration div
+const userReg = document.getElementById('register');
+
+const rForm = document.getElementById('register-form');
+
+const username = document.getElementById('username');
+// timer
+const timeSec = document.getElementById('timer-sec');
+// question section
+const questions = document.getElementById('quiz-questions');
+// next button
+const totalQ = document.getElementById('total');
+
+const nextQ = document.getElementById('nextQ');
+//answer option buttons
+const options = document.getElementsByClassName('option');
+
+// feed back
+const feedBack = document.getElementById('feed-back');
+// define variables for timer & correct answers & quiz level
+let qLevelTime = [10,5];
+let level = [0,1];// 1st & 2nd level of quiz
+let qlevel;
+let index = 0;
+let timer = qLevelTime[0];
+let interval = 0;
+let counter;
+let correct = 0;
+let questC = 1;
+localStorage.setItem('username', 'username');
+localStorage.setItem('correctAnswer', 'correct');
+
+qlevel = level[0];
+
+
 //next level btn clicked
 function quizLevel2(){
     feedBack.classList.remove('reveal');//hide
@@ -244,14 +290,6 @@ function closePopup(){
 }
 quitBtn.addEventListener('click', closePopup, false);
 
-// user registration div
-const userReg = document.getElementById('register');
-
-const rForm = document.getElementById('register-form');
-
-const username = document.getElementById('username');
-//continue button
-const continueBtn = document.getElementById('continue');
 
 // popup registration div,clicking continueBtn
 function userRegistration(){
@@ -261,8 +299,7 @@ function userRegistration(){
 }
 continueBtn.addEventListener('click', userRegistration, false);
 
-//thank you div/button
-let welcome = document.getElementById('welcome');
+
 // function to validate user input
 function validateName(){
     let regEx = /^[A-Za-z]+$/;
@@ -277,7 +314,7 @@ function validateName(){
     }
 }
 
-let msg = document.getElementById('message');
+
 // submit form to collect username & save to local storage
 rForm.addEventListener('submit', function(e){
     e.preventDefault();
@@ -293,15 +330,13 @@ rForm.addEventListener('submit', function(e){
     
 });
 
-//thank you button
-let thankYou = document.getElementById('thank-you');
+
 thankYou.addEventListener('click', function(e){
     if(e == 'click'){
         goQuiz();
     }
 });
-// quiz div
-let quiz = document.getElementById('quiz');
+
 // Start Quiz after registration and welcome message.
 function goQuiz(){
     welcome.classList.remove('active');//hide
@@ -314,14 +349,7 @@ function goQuiz(){
     questCounter(questC);
  }
 
-// timer
-let timeSec = document.getElementById('timer-sec');
-// question section
-let questions = document.getElementById('quiz-questions');
-// next button
-let totalQ = document.getElementById('total');
 
-let nextQ = document.getElementById('nextQ');
 nextQ.addEventListener('click', function(e){
     if (e == 'click') {
         nextQuestion();        
@@ -335,29 +363,7 @@ exitBtn.addEventListener('click', function(){
     localStorage.clear();
     start.classList.remove('inactive');
     start.classList.add('active');
-})
-
-//answer option buttons
-let options = document.getElementsByClassName('option');
-
-// feed back
-let feedBack = document.getElementById('feed-back');
- 
-// define variables for timer & correct answers & quiz level
-let qLevelTime = [10,5];
-let level = [0,1];// 1st & 2nd level of quiz
-let qlevel;
-let index = 0;
-let timer = qLevelTime[0];
-let interval = 0;
-let counter;
-let correct = 0;
-let questC = 1;
-localStorage.setItem('username', 'username');
-localStorage.setItem('correctAnswer', 'correct');
-
-qlevel = level[0];
-
+});
 
 //footer question of questions
 function questCounter(questC){
@@ -517,7 +523,6 @@ function nextQuestion(){
         
     }
 }
-let start_Again = document.getElementById('start-again');
 
 //restart button clicked
 function startAgain(){
@@ -534,17 +539,13 @@ function startAgain(){
     
 }
 
-start_Again.addEventListener('click',function(){
-    startAgain();
-})
-let exBtn = document.getElementById('exit');
 // exit quiz and return back to start page
 function returnHome(){
     feedBack.classList.remove('reveal');
     start.classList.remove('inactive');
     start.classList.add('active');
 }
-exBtn.addEventListener('click', returnHome, false);
+
 
 
 
