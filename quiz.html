@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="quiz Application">
+    <meta name="keywords" content="quiz,quiz application,quiz app,quiz game,quiz challenge">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <title>Quiz Application</title> 
+</head>
+<body>
+    <div class="container">
+       
+        <!-- quiz rules -->
+        <div id="rules" class="popup">
+            <h2>Rules of the Dizzy Quiz.</h2>
+            <h3>1. You will have only <span>10 seconds</span> per question</h3>
+            <h3>2. Answers can't be selected more than once</h3>
+            <h3>3. Once your time is up, you can't select any answers</h3>
+            <h3>4. You can exit from the quiz while playing</h3>
+            <h3>5. Your scores depends on your correct answers</h3>
+            <div class="btns">
+                <a id="quit" href="index.html">Exit</a>
+                <button id="continue" onclick="userRegistration()">Continue</button>
+            </div>
+        </div> 
+        <!-- user registration form -->
+        <div class="user-registration" id="register">
+            <h3>Please, enter a username to begin the Dizzy quiz challenge.</h3>
+            <form autocomplete="off" method="get" id="register-form">
+                <input type="text" name="username" id="username" required minlength="2" maxlength="8" placeholder="Enter UserName Here">
+                <button type="submit" id="reg">submit</button>
+            </form>
+        </div>
+        <!-- Error Message -->
+        <div id="message" class="error">
+            <span class="closebtn" onclick="this.parentElement.style.display='none';"><i class="fas fa-times"></i></span> 
+            <h2>Please enter only aphabet characters for name.</h2>
+        </div>
+        <!-- thank you section -->
+        <div id="welcome" class="thanks">
+            <h2>Thank you <span id="user"></span> for registering, you can now start the quiz</h2>
+            <button id="thank-you" onclick="goQuiz()">Start Quiz</button>
+        </div>
+        <!-- Quiz -->
+        <div id="quiz" class="tests">
+            <!-- quiz header -->
+            <header>
+            <div class="quiz-box">
+                <div class="title">Dizzy Quiz Challenge</div>
+                <div id="timer">
+                    <div id="time-text">Time Left</div>
+                    <div id="timer-sec">00</div>
+                </div>
+             </div>
+            </header>
+            <!-- quiz questions -->
+            <div id="quiz-questions">
+                <div class="questions">
+                    <span id="question-num"></span>
+                    <span id="question-text"></span>
+                </div>
+                <div class="option-list">
+                                    <div class="option">
+                                        <span id="answer1" class="answers"></span>
+                                        <div class="icon"></div>
+                                    </div>
+                                    <div class="option">
+                                        <span id="answer2" class="answers"></span>
+                                        <div class="icon"></div>
+                                    </div>
+                                    <div class="option">
+                                        <span id="answer3" class="answers"></span>
+                                        <div class="icon"></div>
+                                    </div>
+                                    <div class="option">
+                                        <span id="answer4" class="answers"></span>
+                                        <div class="icon"></div>
+                                    </div>
+                </div>
+            </div>
+            <!-- quiz footer -->
+            <footer>
+                <div class="total-questions" id="total">
+                   <!-- load from js -->
+                </div>
+            
+                <a href= "index.html" id="leave" class="home">Exit</a>
+                <button class="next" id="nextQ" onclick="nextQuestion()">Next<i class="fas fa-caret-right"></i></button>
+                
+            </footer>
+
+        </div>
+        <!-- feedback or results -->
+        <div id="feed-back" class="flash">
+            <span id="face"></span>
+            <h4 id="info"></h4>
+            <h4 id="points"></h4>
+            <a href="index.html" id="exit" class="home">Quit Quiz</a>
+            <button id="start-again" class="home" onclick="startAgain()">Start Again</button>
+            <button id="move-up" class="next" onclick="quizLevel2()">Next Level</button>
+        
+        </div>
+    </div>
+    <!-- fontawesome -->
+    <script src="https://kit.fontawesome.com/9273c684b9.js" crossorigin="anonymous"></script>
+    <script src="assets/js/questions.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
