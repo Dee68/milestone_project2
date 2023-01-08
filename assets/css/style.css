@@ -26,13 +26,9 @@ body {
     align-items: center;
     justify-content: center;
     position: absolute;
-    font-size: 280%;
-    color: #2E382E;
 }
-h1,h2,h3,h4 {
-    margin-bottom: 1rem;
-}
-/* paragraph size */
+
+
 .container  p {
     font-size: 1.5rem;
     margin-top: 12px;
@@ -59,7 +55,6 @@ h1,h2,h3,h4 {
     border-radius: 5px;
     border: 1px solid #3F817E;
     box-shadow: 10px 10px 10px rgba(72, 165, 166, 0.5);
-    width: 55%;
     background-color: rgba(72,165,166,0.9)
 }
 .start-btn #start {
@@ -69,7 +64,6 @@ h1,h2,h3,h4 {
     padding: 14px 25px;
     border: 1px solid #48A5A6;;
     box-shadow: 10px 10px 10px rgba(72, 165, 166, 0.5);
-    border-radius: 15px;
     font-size: 23px;
     font-weight: 700;
     color: #f0f8ff;
@@ -129,7 +123,6 @@ h1,h2,h3,h4 {
 /* quiz rules */
 .popup {
     height: auto;
-    width: 50%;
     padding: 20px;
     background-color: rgba(72,165,166, 0.7);
     border-radius: 5px;
@@ -238,7 +231,6 @@ h1,h2,h3,h4 {
 /* user regitration form */
 .user-registration {
     height: auto;
-    width: 55%;
     padding: 25px;
     background-color: rgba(72, 165, 166, 0.5);
     border-radius: 5px;
@@ -313,7 +305,6 @@ h1,h2,h3,h4 {
 /* Message */
 .error {
     height: auto;
-    width: 30%;
     padding: 20px;
     background-color: rgba(72,165,166, 0.7);
     border-radius: 5px;
@@ -766,12 +757,41 @@ h1,h2,h3,h4 {
     }
 }
 /* media queries for small tablet   */
-/* @media(min-width:576px) and (max-width:767px) {
+@media(min-width:576px) and (max-width:767px) {
+    .container  p {
+        text-align: center;
+     }
+     .start-btn {
+         width: 80%;
+        
+     }
+     .start-btn #start {
+         border-radius: 10px;
+     }
+      /* quiz rules */
+      .popup {
+         width: 80%;
+         margin: 0 auto;
+     }
     
-} */
+     .user-registration {
+         width: 90%;
+         margin: auto;
+     }
+     .error {
+         width: 90%;
+     }
+     .thanks {
+         width: 90%;
+         padding: 20px;
+     }
+     .tests {
+         width: 90%;
+     }
+}
 
 
-@media(min-width:768px) and (max-width:1250px) {
+@media(min-width:768px) and (max-width:1280px) {
    
     .container  p {
        text-align: center;
