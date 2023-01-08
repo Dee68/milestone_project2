@@ -5,6 +5,8 @@
 Dizzy Quiz challenge is a two level quiz challenge application,that can be extended for more levels.
 Its sole aim is for entertainment and study. 
 
+![responsiveness](readImg/respondizzy.png)
+
 ## Demo
 
 The live site can be viewed here - [alexandra davenport](https://mitchdavenport88.github.io/MSP1/).
