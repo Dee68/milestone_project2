@@ -1,90 +1,111 @@
 # Dizzy Quiz Challenge
 
-### Milestone Project Two
-
-Dizzy Quiz challenge is a two level quiz challenge application,that can be extended for more levels.
-Its sole aim is for entertainment and study. 
-
 ![responsiveness](readImg/respondizzy.png)
 
-## Demo
+- [Dizzy Quiz](#dizzy-quiz)
+  * [Introduction](#introduction)
+  * [User Experience (UX)](#user-experience--ux-)
+    + [Target Audience](#target-audience)
+    + [Strategy](#strategy)
+    + [Scope](#scope)
+      - [User Stories](#user-stories)
+    + [Structure](#structure)
+    + [Wireframes](#wireframes)
+    + [Surface](#surface)
+  * [Features](#features)
+    + [Existing Features](#existing-features)
+    + [Future Features](#future-features)
+  * [Languages Used](#languages-used)
+  * [Technologies Used](#technologies-used)
+  * [Testing](#testing)
+    + [Validator Testing](#validator-testing)
+    + [Responsiveness](#responsiveness)
+    + [User Stories Testing](#user-stories-testing)
+    + [Manual Testing](#manual-testing)
+    + [Bugs](#bugs)
+    + [Unfixed Bugs](#unfixed-bugs)
+  * [Deployment](#deployment)
+  * [Forking and Cloning the repository]
+  (#forking-and-cloning-the-repository)
+    + [Forking](#forking)
+    + [Making a Local Clone](#making-a-local-clone)
+  * [Credits](#credits)
+    + [Content](#content)
+    + [Code](#code)
+    + [Media](#media)
+    The live website can be viewed [here](https://dee68.github.io/milestone_project2/)
+## Introduction
+The Dizzy quiz challenge is an educative, fun seeking interactive quiz for those who love web development. Users answer multiple choice questions with a timer and are given a feedback on their final score.
 
-The live site can be viewed here - [alexandra davenport](https://mitchdavenport88.github.io/MSP1/).
+## Goal
+The goal was to create an educative and entertaining web-based quiz. The html and css topics was chosen because it lay's the foundation for all web applications. Besides it will appeal to all age group that are interested in checking their theoritical knowledge of the subject domain.
 
-GitHub repository can be viewed here - [mitchdavenport88/MSP1](https://github.com/mitchdavenport88/MSP1).
+## User Experience (UX)
+### Target Audience
+The quize targets people of all ages who enjoy quizzes and are specifically interested on web development.
 
-![Site Mockup](readme-attachments/ami.responsivedesign.is(1).jpg)
-
-## UX
 
 ### Strategy
-The aim is to improve the current site by streamlining the existing one by removing irrelevant information and 
-sections to find a balance between an artistic / professional aesthetic and feel.
+The purpose of this online quiz is to provide an entertaining and educative quiz for people of age group who likes web development.
 
-Reasons for the site:
-* Self-promotion.
-* To show her portfolio / body of work to others.
-* To help people get in touch with her.
+The quiz should be easy for the user to navigate across the different pages and return to the home page or restart the quiz. 
+
+The application should initially be a simple design with enough interactivity to function and entertain and to which features and question content can easily be added as popularity grows.
+
+
+### Scope
+The project scope follows the minimal viable features approach for the initial project. However the scope is such that interactive features to enhance the user experience will be added in future.
+
+The project is to be a simple functioning online quiz game with multiple choice questions and a timer that checks for the user's answer. The project also includes a register form to get the user's name before starting the quiz. If the time runs out, the user can not choose an answer. The quiz consists of two levels. The user can get to the second and final level only after obtaining a minimal score of 5 for the first level.
+
+A fun feedback message will be generated with the user's score.
+
+The purpose of the site will be clear from the landing page and will be visually attractive to the user. The site will be easy to navigate and fully responsive to all sized screens. 
 
 ### User Stories
-1. I’m a curator who is planning an upcoming exhibition and I’ve been pointed towards Alex - 
-I’d now like to see some examples of her work. I’d also like to find out abit about her and see what other exhibitions 
-she has been involved in. I like what I see and want to get in touch with her to discuss my upcoming exhibition.
+As the site owner I want to:
+* create an entertaining interactive quiz on the topic of html and css
 
-2. I’m a student who is taught by Alex. As an aspiring artist I’d like to see her work and use this as inspiration for my 
-upcoming projects. I spend a lot of time on social media and I’d like to follow Alex on Instagram as I like her work. 
-I can also use her posts as research for my university work and keep an eye out for upcoming shows and exhibitions.
+As a general user I want to:
+1. play a fun quiz
+2. navigate easily around the application
+3. clearly see what question number I am on
+4. answer reasonably challenging questions on the topic
+5. see immediately if my answer is right or wrong
+6. view my final score
+7. easily restart the game after I finish
+8. be rated on my knowledge of the subject
+9. be able to use the application on different sized screens
 
-3. I’ve recently seen some of Alex’s work at a gallery and would like to see more. I’d like to be informed of upcoming 
-projects, exhibitions and news so follow her on social media and also subscribe to a mailing list.
+As a new user I want to 
+* easily identify what the quiz topic is
 
-### Scope - Functionality
-* The site must be easy to navigate around.
-* Unlike most artist's websites it must be well presented and visually appealing.
-* Be minimalistic to reflect her work.
-* Function as expected.
-
-### Scope - Content
-As we are using this site to self-promote we need to meet these requirements:
-* Tell the audience who we are and what we do.
-* Show the audience our work.
-* List where we are showing work and where we’ve shown work.
-* Show features in the press we’ve had.
-* Make it easy to get in touch by email, social media or contact form.
-
-I'd like the work section to be more like an online portfolio; with each project having a page to itself 
-talking about the project in more detail and showing more images, videos and sketches but in more structured and user 
-friendly way than currently done.
-
-Alex has selected 12 projects that she’d like to continue displaying – meaning an additional 12 pages, which isn’t feasible 
-or necessary at this time. We can keep this to one page for the time being and show an image that represents each project 
-with the intention of this section of the site evolving over time. This would lead us to adding more pages (a page for each 
-project) in the future, which will add more content and context to each project and the current work page acting as a 
-visual contents page, linking to each of these project pages.
+During this phase of the project design test repositories were created to try out visuals and initial features before establishing the final respository.
 
 ### Structure
-Based on the content required in the scope this website will consist of 4 pages:
-* A home / landing page, which will feature an image of Alex’s work.
-* An about page, telling the user about Alex’s work and her work / exhibition history.
-* Work page – as touched upon in the scope will show examples of Alex’s work with the view of extending this over time.
-* Contact (contact form).
 
-The site will have navigational links in the sidebar (on desktops) and in the header and footer (on tablet and mobile 
-devices), which will feature on each page. Not only will this create a better space for displaying information but meaning 
-the site will be easy to navigate around whilst the user will have access to her Instagram, the option to email Alex and 
-to subscribe to her newsletter (via mailchimp) at any point.
+The user experience design is clear and simple with features positioned conventionally. Navigation items are clearly visible on each page signalling the pathway through the site from the home page through the quiz ending at the feedback modal. From there the user can navigate back to the home page or to the quiz start page.
 
-- ### Wireframes
-![wireframes](readImg/wireframe.png)
-* Initial idea - [sketch](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/wireframe%20-%20sketch.jpg?raw=true).
-* Home wireframes - [desktop](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/home%20_%20landing.png?raw=true) / 
-[mobile](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/home%20_%20landing%20(mobile).png?raw=true).
-* About wireframes - [desktop](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/about.png?raw=true) / 
-[mobile](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/about%20(mobile).png?raw=true).
-* Work wireframes - [desktop](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/work.png?raw=true) / 
-[mobile](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/work%20(mobile).png?raw=true).
-* Contact wireframes - [desktop](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/contact.png?raw=true) / 
-[mobile](https://github.com/mitchdavenport88/MSP1/blob/master/wireframes/contact%20(mobile).png?raw=true).
+[Home Page](https://dee68.github.io/milestone_project2/)
+* Title: the title of the quiz appears on the home page to announce the topic of the quiz. 
+* There is one clear call to action button to start the quiz.
+
+[Quiz Page](https://dee68.github.io/milestone_project2/quiz.html)
+* The rules of the quiz is clearly visible in the middle of the screen.
+* The registration form is clearly visible with an input for a username and a button to validate the input.
+* The welcome or thank you modal clearly visible in the middle signalling user to start the quiz.
+* The question is clearly visible in the middle of the quiz play area with the four answer choices underneath.
+* Above the question and answer section is the timer section showing the time required per question.
+Also if user makes no choice after the time runs out, all answer choices becomes diaabled.
+* When the user selects the answer the colour of the answer changes to red or green to indicate correct or incorrect before displaying the next question.
+
+
+#### Wireframes
+The initial wireframe designs folder for this application can be seen here:
+
+[Wireframes](https://github.com/Dee68/milestone_project2/blob/main/readImg/)
+
+![alt-text](readImg/wireframe.png)
 
 ### Surface
 I’ve spoken about creating balance between an artistic and professional aesthetic throughout this site, implementing a 
@@ -104,9 +125,60 @@ google font along with the use of letter spacing in my CSS will help me achieve 
 The imagery used throughout this site will be a reflection on Alex herself being a photographer / artist first and foremost. 
 The background of the home / landing page will be a full size image of Alex performing. A large image will also be used 
 on the contact page as I feel it’s important to showcase her work where possible – I want the images to do the work really 
-and add content and context where applicable. All Imagery will be supplied by Alex.
+and add content and context where applicable.
 
 ## Features
+### Existing Features
+
+* [Home page](https://github.com/Dee68/milestone_project2/blob/index.html)
+
+On the home page there is a 'GO TO QUIZ' button to navigate to the quiz page:
+
+![alt-text](readImg/home.png)
+
+* [Quiz page](https://github.com/Dee68/milestone_project2/quiz.html)
+
+On the quiz landing page there is the rules of the quiz,showing how the quiz will be conducted.
+
+![rules](readImg/rules.png)
+
+On navigating further after the landing page, there is the registration modal tha enables user to enter their username that will be used to give them feedback.
+
+![register](readImg/register.png)
+
+If the username has any non alphabet character the validation rule of the registration form throws an error and an alert message popups to inform the user what's wrong:
+
+![validation](readImg/validate.png)
+
+There is also the welcome or thank you modal that shows  up before starting the quiz:
+
+![thankyou](readImg/welcome.png)
+
+After the thank you modal popups and user clicks the start button then popups the actual quiz challenge:
+
+![quiz-challenge](readImg/quiz.png)
+
+There is a timer above the question text to indicate what time is needed per question:
+
+![timer](readImg/timer.png)
+
+When the user selects an answer by clicking the answer turns either red for incorrect or green for correct and remains coloured. If the user's answer is incorrect the correct answer shows up immediately:
+
+![correct-incorrect](readImg/correct.png)
+![incorrect-correct](readImg/incorrect.png)
+
+
+There is also a 'Question number' below the answers to show the user which question they are currently answering and how many questions there are in total:
+
+![question_of_questions](readImg/navigation.png)
+
+Depending on the user's performance a fun feedback popups with the corresponding user's name and score:
+
+![success](readImg/success.png)
+![failure](readImg/failure.png)
+
+The mouse changes to a pointer on all the clickable buttons and answer option to indicate clearly where the user can click for an action.
+
 
 ### Page layout
 * Each page has been split into two sections; navigation and content. The navigation part of the page remains the same on 
