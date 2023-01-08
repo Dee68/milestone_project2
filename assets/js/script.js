@@ -136,15 +136,7 @@ nextQ.addEventListener('click', function(e){
         nextQuestion();        
     }
 });
-// leave button
-let exitBtn = document.getElementById('leave');
-// click exit button
-exitBtn.addEventListener('click', function(){
-    quiz.classList.remove('active');
-    localStorage.clear();
-    username = '';
-    correctAnswer = 0;
-});
+
 
 //footer question of questions
 function questCounter(questC){

@@ -28,7 +28,6 @@ body {
     position: absolute;
     font-size: 280%;
     color: #2E382E;
-    
 }
 h1,h2,h3,h4 {
     margin-bottom: 1rem;
@@ -539,7 +538,7 @@ h1,h2,h3,h4 {
     height: 40px;
     font-size: 18px;
     font-weight: 400;
-    padding: 0 13px 5px 5px;
+    padding: 0 15px 5px 15px;
     outline: none;
     background-color: rgba(72,165,166, 0.7);
     color: #f0f8ff;
@@ -634,77 +633,175 @@ h1,h2,h3,h4 {
     top: 320px;
     margin-top: 35px;
 }
-/* media query */
-@media(min-width:280px) and (max-width:575px) {
-    .container {
-        justify-content: space-around;
-    }
+/* very small screen sizes */
+@media screen and (max-width:359px) {
     .container h1 {
-        margin-top: 12%;
-        font-size: 110%;
-        justify-content: center;
+        top: 30px;
+        font-size: 110%; 
+    }
+    .container  p {
+        font-size: 0.8rem;
+        margin-top: 24px;
     }
     .start-btn {
-        width: 32%;
-        height: 9vh; 
-        /* margin-left: 10%; */
-        margin: 0 auto;
-        align-items: center;
-        justify-content: center;
-        
+        width: 75%;
+       
     }
     .start-btn #start {
-        height: 45px;
-        border-radius: 10px;
-        font-size: 15px;
-        margin: 50% 50%;
-        padding: 2px 0;
+        padding: 7px 15px;
+        border: 1px solid #48A5A6;;
+        box-shadow: 10px 10px 10px rgba(72, 165, 166, 0.5);
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 400;  
     }
-}
-/*    */
-/* @media screen and (max-width:767px) {
-    .container h1 {
-        margin-top: 10%;
-        font-size: 180%;
-    }
-    .start-btn {
-        width: 35%;
-        height: 10vh;   
-    }
-    .start-btn #start {
-        
-        border-radius: 10px;
-        font-size: 15px;
-        
-    }
-    .popup,.tests {
-        height: auto;
-        width: 90%;
-        padding: 5px;
-        margin: 0 auto;
+    /* quiz rules */
+    .popup {
+        width: 100%;
+        margin: 50px 50px;
     }
     #rules h2 {
-        font-size: 95%;
+        font-size: 90%;
+        font-weight: bold;
     }
     #rules h3 {
-        font-size: 15px;
-        margin-top: 10px;
+        font-size: 13px;
     }
-    #rules .btns {
-        margin-top: 175px;
+    
+    #rules h3 span {
+        font-weight: 400;
     }
-    #quiz footer .home {
-        margin-left: 180px;
-    }
-    #quiz footer .next {
-        margin-left: 5px;
-    }
+
 }
 /*  */
-@media screen and (min-width:1250px) {
-    .popup h3 {
-        align-items: center;
-        justify-content: center;
-        text-align: center;
+@media(min-width:360px) and (max-width:575px) {
+    .container h1 {
+        top: 30px;
+        font-size: 110%; 
     }
+    .container  p {
+        font-size: 0.8rem;
+        margin-top: 24px;
+    }
+    .start-btn {
+        width: 75%;
+       
+    }
+    .start-btn #start {
+        padding: 7px 15px;
+        border: 1px solid #48A5A6;;
+        box-shadow: 10px 10px 10px rgba(72, 165, 166, 0.5);
+        border-radius: 5px;
+        font-size: 12px;
+        font-weight: 400;  
+    }
+    /* quiz rules */
+    .popup {
+        width: 80%;
+        margin: 0 auto;
+    }
+    #rules h3 {
+        font-size: 13px;
+    }
+
+    #rules h3 span {
+        font-weight: 400;
+    }
+    .user-registration {
+        height: auto;
+        width: 90%;
+        margin: auto;
+    }
+    .user-registration form input {
+        font-size: 90%;
+    }
+    .user-registration h3 {
+        font-size: 90%;
+    }
+    .thanks {
+        width: 90%;
+        padding: 20px;
+    }
+    .thanks h2 {
+        font-size: 80%;
+    }
+    .thanks span {
+        color: green;
+        font-size: 101%;
+    }
+    .tests {
+        width: 90%;
+    }
+    #quiz .quiz-box .title {
+        font-size: 16px;
+        margin: 0 10px;
+    }
+    #quiz .quiz-box .title {
+        font-size: 16px;
+    }
+    #quiz .quiz-box #time-text {
+        font-size: 15px;
+        margin: 5px 2px;
+    }
+    #quiz-questions {
+        padding: 15px 10px 15px 10px;
+    }
+    #quiz footer .home {
+        height: 40px;
+        font-size: 15px;
+        font-weight: 400;
+        padding: 10px;
+        margin-left: 10px;
+        margin-right: 5px;
+    }
+    #quiz .quiz-box #timer {
+        width: 170px;
+    }
+    #quiz .quiz-box #timer-sec {
+        margin: 2px 0 0 45px;
+    }
+    #feed-back h4 {
+        width: 80%;
+        font-size: 15px;
+    }
+}
+/* media queries for small tablet   */
+/* @media(min-width:576px) and (max-width:767px) {
+    
+} */
+
+
+@media(min-width:768px) and (max-width:1250px) {
+   
+    .container  p {
+       text-align: center;
+    }
+    .start-btn {
+        width: 80%;
+       
+    }
+    .start-btn #start {
+        border-radius: 10px;
+    }
+     /* quiz rules */
+     .popup {
+        width: 80%;
+        margin: 0 auto;
+    }
+   
+    .user-registration {
+        width: 90%;
+        margin: auto;
+    }
+    .error {
+        width: 90%;
+    }
+    .thanks {
+        width: 90%;
+        padding: 20px;
+    }
+    .tests {
+        width: 90%;
+    }
+   
 } 
