@@ -283,7 +283,7 @@ function nextQuestion(){
 //restart button clicked
 function startAgain(){
     feedBack.classList.remove('reveal');
-    rules.classList.add('active');//show
+    rules.classList.remove('inactive');
     // reset score
     correct = 0;
     qlevel = level[0];
