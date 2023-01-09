@@ -42,7 +42,7 @@ The goal was to create an educative and entertaining web-based quiz. The html an
 
 ## User Experience (UX)
 ### Target Audience
-The quize targets people of all ages who enjoy quizzes and are specifically interested on web development.
+The quize targets people of all ages who enjoy quizzes and are specifically interested in web development.
 
 
 ### Strategy
@@ -108,11 +108,11 @@ The initial wireframe designs folder for this application can be seen here:
 ![alt-text](readImg/wireframe.png)
 
 ### Surface
-I intended  creating balance between an artistic and professional aesthetic throughout this application, implementing a 
+I intended creating a balance between an artistic and professional aesthetic throughout this application, implementing a 
 minimalistic feel which I feel is suited to an application of this kind. 
 
 * Favicon
-The favicon was cooosen in accordance with the title of the application.
+The favicon was chooosen in accordance with the title of the application.
 
 * Icons
 The icons used in the application are all in tone and can be understood by any user intuitively.
@@ -154,7 +154,7 @@ There is a timer above the question text to indicate what time is needed per que
 
 ![timer](readImg/timer.png)
 
-When the user selects an answer by clicking the answer turns either red for incorrect or green for correct and remains coloured. If the user's answer is incorrect the correct answer shows up immediately:
+When the user selects an answer by clicking the answer turns either red for incorrect or green for correct and remains coloured and the timer stops. If the user's answer is incorrect the correct answer shows up immediately:
 
 ![correct-incorrect](readImg/correct.png)
 ![incorrect-correct](readImg/incorrect.png)
@@ -242,7 +242,7 @@ The website was tested primarily on Chrome through the design phase. Additional 
 
 Each user story was tested as follows:
 As the site owner I want to:
-* create an entertaining interactive quiz on the topic of eighties music trivia
+* create an entertaining interactive quiz on the topic of html and css
 
 The quiz was tested by a variety of friends and family who complimented the look of the quiz and enjoyed playing answering the questions. They found it to be fun and would enjoy playing it again.
 
@@ -313,7 +313,7 @@ In order to fork the repository to make a copy the steps are:
 
 ### Content
 Some questions were written by this author with inspiration and most questions were adapted from the following site:
-![W3school](https://w3schools.com)
+[w3schools quizzes](https://www.w3schools.com/html/html_quiz.asp)
 
 ### Code
 * This tutorial by [Coding Nepal](https://www.youtube.com/watch?v=pQr4O1OITJo) was followed closely for the intial javascript set up of the timer.
@@ -328,7 +328,7 @@ The following references were used as learning resources
 
 The following were used as references to check syntax for coding and for general queries:
 
-* [w3 schools](https://www.w3schools.com/)
+* [w3schools](https://www.w3schools.com/)
 * [stackoverflow](https://stackoverflow.com/)
 
 ### Media
