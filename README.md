@@ -273,6 +273,33 @@ Navigation buttons are clearly displayed on each page. The icons are styled in k
 ![alt-text](readImg/home.png)
 
 
+## Manual Testing
+
+The quiz was tested by users of various ages. Feedback was overall positive from users. 
+
+
+The following functioned as intended:
+* Questions and corresponding answers generated correctly in their boxes
+* The timer works as expected in both levels of the quiz.
+* The colours change to the colour corresponding to the correct/incorrect answer selected by the user.
+
+The following links were tested and functioned as expected:
+
+* The to to quiz button on the home page links to the quiz page
+* The quit quiz  button on the feedback page exits the quiz and returns the user to the home page
+* The start again button on the modalfeedback page returns the user to the start of the quiz.
+* The exit button on the quiz rules modal returns the user to the home page.
+
+The following were also tested and function correctly:
+
+* The correct user final score displays
+* The final message displays the correct message corresponding to the final score. 
+
+
+## Bugs
+ The following bug was found and squashed: 
+
+ While implementing the start again function the score of the user was not displaying correctly. This was due to the fact that the method localStorage.clear() method was used incorrectly. When the variable stored in the localStorage was given a reset value everything worked perfectly.
 
 
 
@@ -281,18 +308,11 @@ Navigation buttons are clearly displayed on each page. The icons are styled in k
 
 
 
-
-
-
-
-
-
-
-
-
-### Unfixed Bugs
+## Unfixed Bugs
 There are no known outstanding bugs.
-#to re Deployment
+
+
+## Deployment
 The site was deployed to GitHub pages. The steps taken to deploy are as follows:
 1. Log in to [GitHub](https://github.com/)
 2. Navigate to [dee68/milestone_project2](https://github.com/Dee68/milestone_project2) in the list of repositories
@@ -347,5 +367,6 @@ The following were used as references to check syntax for coding and for general
 * [dizzy icon](https://favicon.io/emoji-favicons/) from [emoji](https://favicon.io/emoji-favicons/) for the favicon
 
 # Acknowledgements
+ * My mentor for his extraordinary insight and continuos useful feedback.
 
 
