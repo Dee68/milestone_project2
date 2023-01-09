@@ -111,21 +111,7 @@ The initial wireframe designs folder for this application can be seen here:
 I’ve spoken about creating balance between an artistic and professional aesthetic throughout this site, implementing a 
 minimalistic feel which I feel is suited to a website of this kind. 
 
-Aesthetically I’ve liked the idea of a fixed side bar from the get go, so I plan on having this on every page with links 
-to the other pages on here. A logo and a footer containing social media links will also feature at the top and bottom of 
-this side bar, meaning you can access any page or contact details quickly and from any other page on the site. This side bar 
-will collapse to a drop down menu in the header with the social links remaining at the foot of the page on smaller devices.
 
-In keeping which my minimalistic approach I’ve chosen to use two colours that contrast one another and will use these 
-throughout - #FAFAFA (white) and #366788 (blue), which I found using [ColorHunt.](https://colorhunt.co/) A lot of the images 
-I plan on using are light in colour – so the white complements these whilst the blue offers a contrast where needed. I’m 
-also planning on using the google font “Inter”, which is a sans-serif font similar to what she uses now. This imported 
-google font along with the use of letter spacing in my CSS will help me achieve this professional and artistic look. 
-
-The imagery used throughout this site will be a reflection on Alex herself being a photographer / artist first and foremost. 
-The background of the home / landing page will be a full size image of Alex performing. A large image will also be used 
-on the contact page as I feel it’s important to showcase her work where possible – I want the images to do the work really 
-and add content and context where applicable.
 
 ## Features
 ### Existing Features
