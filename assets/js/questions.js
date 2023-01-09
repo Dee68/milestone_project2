@@ -1,6 +1,6 @@
 /*jshint esversion: 6 */
 
-const DzQuiz  = [
+const dzQuiz  = [
     [
     {   num: 1,
         question: "What does HTML stand for ?",

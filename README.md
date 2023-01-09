@@ -33,6 +33,7 @@
     + [Content](#content)
     + [Code](#code)
     + [Media](#media)
+    + [Acknowledgements](#acknowledgements)
     The live website can be viewed [here](https://dee68.github.io/milestone_project2/)
 ## Introduction
 The Dizzy quiz challenge is an educative, fun seeking interactive quiz for those who love web development. Users answer multiple choice questions with a timer and are given a feedback on their final score.
@@ -100,7 +101,7 @@ Also if user makes no choice after the time runs out, all answer choices becomes
 * When the user selects the answer the colour of the answer changes to red or green to indicate correct or incorrect before displaying the next question.
 
 
-#### Wireframes
+### Wireframes
 The initial wireframe designs folder for this application can be seen here:
 
 [Wireframes](https://github.com/Dee68/milestone_project2/blob/main/readImg/)
@@ -112,7 +113,7 @@ I intended creating a balance between an artistic and professional aesthetic thr
 minimalistic feel which I feel is suited to an application of this kind. 
 
 * Favicon
-The favicon was chooosen in accordance with the title of the application.
+The favicon was choosen in accordance with the title of the application.
 
 * Icons
 The icons used in the application are all in tone and can be understood by any user intuitively.
@@ -231,7 +232,7 @@ The only issue is "one undefined variable" which refers to the variable `DzQuiz`
 
 ![alt-text](readImg/lighthouse.png)
 
-### Responsiveness
+## Responsiveness
 The website was tested primarily on Chrome through the design phase. Additional testing was conducted on Mozilla, Edge and Safari browsers with no problems found and good performance. 
 * Mozilla: 
 ![alt-text](readImg/mozila.png)
@@ -248,7 +249,7 @@ Chrome developer tools were used throughout the design process to check responsi
 
 
 
-### User Stories Testing
+## User Stories Testing
 
 Each user story was tested as follows:
 As the site owner I want to:
@@ -271,39 +272,60 @@ Navigation buttons are clearly displayed on each page. The icons are styled in k
 
 ![alt-text](readImg/home.png)
 
+## Manual Testing
+
+The quiz was tested by users of various ages. Feedback was overall positive from users.
+
+
+The following functioned as intended:
+* Questions and corresponding answers generated correctly in their boxes
+* The timer works both in the first and second level as specified.
+* The colours change to the colour corresponding to the correct/incorrect answer selected by the user.
+
+The following links were tested and functioned as expected:
+
+* The play button on the home page links to the quiz page
+* The start again button on the feedback modal returns user back to quiz start page.
+* The next level button moves user to second level of quiz.
+* The Quit button on the modal returns the user to the home page.
+
+The following were also tested and function correctly:
+
+* The modal page pops up at the end of the quiz as expected
+* The correct user final score displays
+* The final message displays the correct message corresponding to the final score. 
+
+
+
+
+## Bugs
+The following bug was found and squashed:
+
+While implementing the function to enable the user to replay the quiz on failing to attain a score of 5 above. The score kept adding the scores from the first attempt to the re-attempt. This was due to using the localStorage.clear() method incorrectly. After debugging the value 'correct' that was stored in the localStorage initially to track the scores, it was discovered that by reseting the value 'correct' to zero everything worked perfectly.
 
 
 
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-### Unfixed Bugs
+## Unfixed Bugs
 There are no known outstanding bugs.
-#to re Deployment
-The site was deployed to GitHub pages. The steps taken to deploy are as follows:
-1. Log in to [GitHub](https://github.com/)
-2. Navigate to [dee68/milestone_project2](https://github.com/Dee68/milestone_project2) in the list of repositories
-3. In the GitHub repository, navigate to the [Settings](https://github.com/Dee68/milestone_project2/settings) tab
-4. In Settings scroll down to [GitHub pages](https://github.com/Dee68/milestone_project2/settings/pages) which opens in a new page.
-5. From the source section drop-down menu, select the Main Branch
-6. Once the main branch has been selected, the page is automatically refreshed and a display indicates the successful deployment and the link to the address.
-The link to the live website is here:
-[Dizzy Quiz](https://github.com/Dee68/milestone_project2/index.html)
 
-## Forking and cloning the repository 
-### Forking
+
+
+# Deployment
+* The site was deployed to GitHub pages. The steps taken to deploy are as follows:
+  1. Log in to [GitHub](https://github.com/)
+  2. Navigate to [dee68/milestone_project2](https://github.com/Dee68/milestone_project2) in the list of repositories
+  3. In the GitHub repository, navigate to the [Settings](https://github.com/Dee68/milestone_project2/settings) tab
+  4. In Settings scroll down to [GitHub pages](https://github.com/Dee68/milestone_project2/settings/pages) which opens in a new page.
+  5. From the source section drop-down menu, select the Main Branch
+  6. Once the main branch has been selected, the page is automatically refreshed and a display indicates the successful deployment and the link to the address.
+  The link to the live website is here:
+  [Dizzy Quiz](https://github.com/Dee68/milestone_project2/index.html)
+
+### Forking and cloning the repository 
+
 In order to fork the repository to make a copy the steps are:
 1. Log into [GitHub](https://github.com/) and locate the repository for [Dizzy Quiz](https://github.com/Dee68/milestone_project2)
 2. At the top of the repository above settings locate the 'Fork' button
@@ -346,5 +368,7 @@ The following were used as references to check syntax for coding and for general
 * [dizzy icon](https://favicon.io/emoji-favicons/) from [emoji](https://favicon.io/emoji-favicons/) for the favicon
 
 # Acknowledgements
+* My mentor for his extraordinary insight and continuos useful feedback.
+
 
 
