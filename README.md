@@ -236,13 +236,23 @@ The website was tested primarily on Chrome through the design phase. Additional 
 * Mozilla: 
 ![alt-text](readImg/mozila.png)
 
+* IE(Internet Explorer)
+![alt-text](readImg/ie.png)
+
+The website was tested on numerous sized screens including iPhones 8 and X, Moto G8 plus, 15" laptop, 24" screen and iPad and was found to respond as expected to all sizes.
+Chrome developer tools were used throughout the design process to check responsiveness and breakpoints. Adjustments were made accordingly. Final testing was done on physical devices as they are the most reliable test.
+
+![alt-text](readImg/ios.png)
+
+![alt-text](readImg/motorola.png)
+
 
 
 ### User Stories Testing
 
 Each user story was tested as follows:
 As the site owner I want to:
-* create an entertaining interactive quiz on the topic of html and css
+* create an entertaining and educative interactive quiz on the topic of html and css
 
 The quiz was tested by a variety of friends and family who complimented the look of the quiz and enjoyed playing answering the questions. They found it to be fun and would enjoy playing it again.
 
@@ -281,7 +291,7 @@ Navigation buttons are clearly displayed on each page. The icons are styled in k
 
 ### Unfixed Bugs
 There are no known outstanding bugs.
-## Deployment
+#to re Deployment
 The site was deployed to GitHub pages. The steps taken to deploy are as follows:
 1. Log in to [GitHub](https://github.com/)
 2. Navigate to [dee68/milestone_project2](https://github.com/Dee68/milestone_project2) in the list of repositories
@@ -334,4 +344,7 @@ The following were used as references to check syntax for coding and for general
 ### Media
 
 * [dizzy icon](https://favicon.io/emoji-favicons/) from [emoji](https://favicon.io/emoji-favicons/) for the favicon
+
+# Acknowledgements
+
 
