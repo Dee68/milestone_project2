@@ -56,7 +56,7 @@ The application should initially be a simple design with enough interactivity to
 ### Scope
 The project scope follows the minimal viable features approach for the initial project. However the scope is such that interactive features to enhance the user experience will be added in future.
 
-The project is to be a simple functioning online quiz game with multiple choice questions and a timer that checks for the user's answer. The project also includes a register form to get the user's name before starting the quiz. If the time runs out, the user can not choose an answer. The quiz consists of two levels. The user can get to the second and final level only after obtaining a minimal score of 5 for the first level.
+The project is to be a simple functioning online quiz game with multiple choice questions and a timer that checks for the user's answer. The project also includes a register form to get the user's name before starting the quiz. If the time runs out, the user can not choose an answer. The quiz consists of two levels. The user can get to the second and final level only after obtaining a minimal score of 5 or above for the first level.
 
 A fun feedback message will be generated with the user's score.
 
@@ -64,7 +64,7 @@ The purpose of the site will be clear from the landing page and will be visually
 
 ### User Stories
 As the site owner I want to:
-* create an entertaining interactive quiz on the topic of html and css
+* create an entertaining and educative interactive quiz on the topic of html and css
 
 As a general user I want to:
 1. play a fun quiz
@@ -108,8 +108,14 @@ The initial wireframe designs folder for this application can be seen here:
 ![alt-text](readImg/wireframe.png)
 
 ### Surface
-I’ve spoken about creating balance between an artistic and professional aesthetic throughout this site, implementing a 
-minimalistic feel which I feel is suited to a website of this kind. 
+I intended  creating balance between an artistic and professional aesthetic throughout this application, implementing a 
+minimalistic feel which I feel is suited to an application of this kind. 
+
+* Favicon
+The favicon was cooosen in accordance with the title of the application.
+
+* Icons
+The icons used in the application are all in tone and can be understood by any user intuitively.
 
 
 
@@ -225,6 +231,47 @@ The only issue is "one undefined variable" which refers to the variable `DzQuiz`
 
 ![alt-text](readImg/lighthouse.png)
 
+### Responsiveness
+The website was tested primarily on Chrome through the design phase. Additional testing was conducted on Mozilla, Edge and Safari browsers with no problems found and good performance. 
+* Mozilla: 
+![alt-text](readImg/mozila.png)
+
+
+
+### User Stories Testing
+
+Each user story was tested as follows:
+As the site owner I want to:
+* create an entertaining interactive quiz on the topic of eighties music trivia
+
+The quiz was tested by a variety of friends and family who complimented the look of the quiz and enjoyed playing answering the questions. They found it to be fun and would enjoy playing it again.
+
+![alt-text](readImg/homepage.png)
+
+As a general user I want to:
+1. play a fun quiz
+
+The welcome page is brightly coloured inspires a positive emotional reponse in users and they anticipate a fun quiz. The title is prominent and clearly shows the topic of the quiz. The theme is comprehensively supported by the colours. The large go to quiz call to action button invites users to start the quiz. 
+
+![alt-text](readImg/mobile.png)
+
+2. navigate easily around the application
+
+Navigation buttons are clearly displayed on each page. The icons are styled in keeping with the dizzy theme and are minimal which keeps the user flow through the site clear. On the home page there is one call to action button prominently displayed which links to the quiz page and invites the user to start the quiz.
+
+![alt-text](readImg/home.png)
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -235,4 +282,56 @@ The only issue is "one undefined variable" which refers to the variable `DzQuiz`
 ### Unfixed Bugs
 There are no known outstanding bugs.
 ## Deployment
+The site was deployed to GitHub pages. The steps taken to deploy are as follows:
+1. Log in to [GitHub](https://github.com/)
+2. Navigate to [dee68/milestone_project2](https://github.com/Dee68/milestone_project2) in the list of repositories
+3. In the GitHub repository, navigate to the [Settings](https://github.com/Dee68/milestone_project2/settings) tab
+4. In Settings scroll down to [GitHub pages](https://github.com/Dee68/milestone_project2/settings/pages) which opens in a new page.
+5. From the source section drop-down menu, select the Main Branch
+6. Once the main branch has been selected, the page is automatically refreshed and a display indicates the successful deployment and the link to the address.
+The link to the live website is here:
+[Dizzy Quiz](https://github.com/Dee68/milestone_project2/index.html)
+
+## Forking and cloning the repository 
+### Forking
+In order to fork the repository to make a copy the steps are:
+1. Log into [GitHub](https://github.com/) and locate the repository for [Dizzy Quiz](https://github.com/Dee68/milestone_project2)
+2. At the top of the repository above settings locate the 'Fork' button
+3. There is now a copy of the repository in the Github account
+
+### Making a local clone
+
+1. On [GitHub](https://github.com/) navigate to the main page of the repository
+2. Above the list of files click the dropdown code menu
+3. Select the https option and copy the link 
+4. Open the GitPod Bash terminal
+5. Change the current working directory to the desired destination location
+6. Type the git clone command with the copied URL: git clone https://github.com/Dee68/milestone_project2.git
+7. Press enter to create the local clone
+
+## Credits
+
+### Content
+Some questions were written by this author with inspiration and most questions were adapted from the following site:
+![W3school](https://w3schools.com)
+
+### Code
+* This tutorial by [Coding Nepal](https://www.youtube.com/watch?v=pQr4O1OITJo) was followed closely for the intial javascript set up of the timer.
+
+The following references were used as learning resources
+
+* [On how to use data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
+* [Reference on forEach looping syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
+* [Timeout function](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_settimeout)
+* [How to make a modal](https://www.youtube.com/watch?v=6ophW7Ask_0) and [how to make CSS/JS modals](https://www.w3schools.com/howto/howto_css_modals.asp)
+* [How to add event listeners to multiple elements](https://reactgo.com/add-event-listener-multiple-elements-javascript/)
+
+The following were used as references to check syntax for coding and for general queries:
+
+* [w3 schools](https://www.w3schools.com/)
+* [stackoverflow](https://stackoverflow.com/)
+
+### Media
+
+* [dizzy icon](https://favicon.io/emoji-favicons/) from [emoji](https://favicon.io/emoji-favicons/) for the favicon
 
