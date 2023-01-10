@@ -368,5 +368,6 @@ The following were used as references to check syntax for coding and for general
 
 # Acknowledgements
  * My mentor for his extraordinary insight and continuos useful feedback.
+ * Our coordinator Irene from Code Institute for keeping up with us on our daily schedules in the classroom.
 
 
