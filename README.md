@@ -299,7 +299,7 @@ The following were also tested and function correctly:
 ## Bugs
  The following bug was found and squashed: 
 
- While implementing the start again function the score of the user was not displaying correctly. This was due to the fact that the method localStorage.clear() method was used incorrectly. When the variable stored in the localStorage was given a reset value everything worked perfectly.
+ While implementing the start again function the score of the user was not displaying correctly. This was due to the fact that the method localStorage.clear() method was used incorrectly. When the variable stored in the localStorage was given a new value of zero everything worked perfectly.
 
 
 
