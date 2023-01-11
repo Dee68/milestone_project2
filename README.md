@@ -237,8 +237,14 @@ The website was tested primarily on Chrome through the design phase. Additional 
 * Mozilla: 
 ![alt-text](readme/images/mozila.png)
 
-* IE(Internet Explorer)
+* IE(Internet Explorer):
 ![alt-text](readme/images/ie.png)
+
+* Safari:
+![alt-text](readme/images/safaribrowser.png)
+
+* Edge:
+![alt-text](readme/images/edge.png)
 
 The website was tested on numerous sized screens including iPhones 8 and X, Moto G8 plus, 15" laptop, 24" screen and iPad and was found to respond as expected to all sizes.
 Chrome developer tools were used throughout the design process to check responsiveness and breakpoints. Adjustments were made accordingly. Final testing was done on physical devices as they are the most reliable test.
