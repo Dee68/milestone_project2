@@ -666,7 +666,10 @@ h3 {
     color: #f0f8ff;
     border: 1px solid #f0f8ff;
     border-radius: 5px;
-    margin: 70px;
+    margin-left: 90px;
+    margin-right: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     font-size: 18px;
     cursor: pointer;
 }
@@ -681,7 +684,10 @@ h3 {
     border: 1px solid #f0f8ff;
     border-radius: 5px;
     padding: 12px;
-    margin: 70px;
+    margin-left: 90px;
+    margin-right: 70px;
+    margin-top: 70px;
+    margin-bottom: 70px;
     font-size: 18px;
     cursor: pointer;
 }
@@ -698,7 +704,7 @@ h3 {
 }
 
 /* very small screen sizes */
-@media screen and (max-width:359px) {
+@media (max-width:359px) {
     .container h1 {
         top: 30px;
         font-size: 110%;
@@ -742,6 +748,16 @@ h3 {
     #rules h3 span {
         font-weight: 400;
     }
+    .flash {
+        width: 80%;
+    }
+    .container #feed-back a {
+        margin-left: 40px;
+    }
+    .container #feed-back button {
+        margin-left: 40px;
+    }
+
 
 }
 
@@ -859,6 +875,13 @@ h3 {
         width: 80%;
         font-size: 15px;
     }
+    .container #feed-back a {
+        margin-left: 15px;
+    }
+    .container #feed-back button {
+        margin-left: 15px;
+    }
+
 }
 
 /* media queries for small tablet   */
@@ -906,6 +929,13 @@ h3 {
         width: 80%;
         font-size: 15px;
     }
+    .container #feed-back a {
+        margin-left: 15px;
+    }
+    .container #feed-back button {
+        margin-left: 15px;
+    }
+
 }
 
 
@@ -947,6 +977,12 @@ h3 {
 
     .tests {
         width: 90%;
+    }
+    .container #feed-back a {
+        margin-left: 90px;
+    }
+    .container #feed-back button {
+        margin-left: 90px;
     }
 
 }
