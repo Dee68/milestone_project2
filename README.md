@@ -323,8 +323,8 @@ The site was deployed to GitHub pages. The steps taken to deploy are as follows:
 The link to the live website is here:
 [Dizzy Quiz](https://github.com/Dee68/milestone_project2/index.html)
 
-## Forking and cloning the repository 
-### Forking
+### Forking and cloning the repository 
+
 In order to fork the repository to make a copy the steps are:
 1. Log into [GitHub](https://github.com/) and locate the repository for [Dizzy Quiz](https://github.com/Dee68/milestone_project2)
 2. At the top of the repository above settings locate the 'Fork' button
@@ -351,7 +351,6 @@ Some questions were written by this author with inspiration and most questions w
 
 The following references were used as learning resources
 
-* [On how to use data attributes](https://developer.mozilla.org/en-US/docs/Learn/HTML/Howto/Use_data_attributes)
 * [Reference on forEach looping syntax](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach)
 * [Timeout function](https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_settimeout)
 * [How to make a modal](https://www.youtube.com/watch?v=6ophW7Ask_0) and [how to make CSS/JS modals](https://www.w3schools.com/howto/howto_css_modals.asp)
@@ -369,5 +368,6 @@ The following were used as references to check syntax for coding and for general
 # Acknowledgements
  * My mentor for his extraordinary insight and continuos useful feedback.
  * Our coordinator Irene from Code Institute for keeping up with us on our daily schedules in the classroom.
+ * Friends and collegues that helped in testing the application.
 
 
