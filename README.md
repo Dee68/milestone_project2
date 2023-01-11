@@ -1,6 +1,6 @@
 # Dizzy Quiz Challenge
 
-![responsiveness](readImg/respondizzy.png)
+![responsiveness](readme/images/respondizzy.png)
 
 - [Dizzy Quiz](#dizzy-quiz)
   * [Introduction](#introduction)
@@ -106,7 +106,7 @@ The initial wireframe designs folder for this application can be seen here:
 
 [Wireframes](https://github.com/Dee68/milestone_project2/blob/main/readImg/)
 
-![alt-text](readImg/wireframe.png)
+![alt-text](readme/images/wireframe.png)
 
 ### Surface
 I intended creating a balance between an artistic and professional aesthetic throughout this application, implementing a 
@@ -127,25 +127,25 @@ The icons used in the application are all in tone and can be understood by any u
 
 On the home page there is a 'GO TO QUIZ' button to navigate to the quiz page:
 
-![alt-text](readImg/home.png)
+![alt-text](readme/images/home.png)
 
 * [Quiz page](https://github.com/Dee68/milestone_project2/quiz.html)
 
 On the quiz landing page there is the rules of the quiz,showing how the quiz will be conducted.
 
-![rules](readImg/rules.png)
+![rules](readme/images/rules.png)
 
 On navigating further after the landing page, there is the registration modal tha enables user to enter their username that will be used to give them feedback.
 
-![register](readImg/register.png)
+![register](readme/images/register.png)
 
 If the username has any non alphabet character the validation rule of the registration form throws an error and an alert message popups to inform the user what's wrong:
 
-![validation](readImg/validate.png)
+![validation](readme/images/validate.png)
 
 There is also the welcome or thank you modal that shows  up before starting the quiz:
 
-![thankyou](readImg/welcome.png)
+![thankyou](readme/images/welcome.png)
 
 After the thank you modal popups and user clicks the start button then popups the actual quiz challenge:
 
@@ -153,22 +153,22 @@ After the thank you modal popups and user clicks the start button then popups th
 
 There is a timer above the question text to indicate what time is needed per question:
 
-![timer](readImg/timer.png)
+![timer](readme/images/timer.png)
 
 When the user selects an answer by clicking the answer turns either red for incorrect or green for correct and remains coloured and the timer stops. If the user's answer is incorrect the correct answer shows up immediately:
 
-![correct-incorrect](readImg/correct.png)
-![incorrect-correct](readImg/incorrect.png)
+![correct-incorrect](readme/images/correct.png)
+![incorrect-correct](readme/images/incorrect.png)
 
 
 There is also a 'Question number' below the answers to show the user which question they are currently answering and how many questions there are in total:
 
-![question_of_questions](readImg/navigation.png)
+![question_of_questions](readme/images/navigation.png)
 
 Depending on the user's performance a fun feedback popups with the corresponding user's name and score:
 
-![success](readImg/success.png)
-![failure](readImg/failure.png)
+![success](readme/images/success.png)
+![failure](readme/images/failure.png)
 
 The mouse changes to a pointer on all the clickable buttons and answer option to indicate clearly where the user can click for an action.
 
@@ -206,12 +206,12 @@ Git was used for version control.
 ### Validator Testing
 * [HTML Validator](https://validator.w3.org/) was run at several points during the project and small syntax errors were identified and fixed. At the final stage no errors or warnings were found.
 
-![alt-text](readImg/html2.png)
+![alt-text](readme/images/html2.png)
 
 
 * [CSS Validator](https://validator.w3.org/) was run several times during the project and picked up small syntax errors which were corrected. At the time of submission the css code successfully passed the validator with no errors.
 
-![alt-text](readImg/css2.png)
+![alt-text](readme/images/css2.png)
 
 * [JS Hint](https://jshint.com/) was used to check the two javascript files. No errors were found and the following metrics were returned:
 
@@ -223,29 +223,29 @@ Git was used for version control.
 
 * The most complex function has a cyclomatic complexity value of 7 while the median is 1.5.
 
-![alt-text](readImg/jshint.png)
+![alt-text](readme/images/jshint.png)
 
-The only issue is "one undefined variable" which refers to the variable `DzQuiz` which is declared in the separate quiz questions JavaScript file.
+The only issue is "one undefined variable" which refers to the variable `dzQuiz` which is declared in the separate quiz questions JavaScript file.
 
 * Chrome Developer Tools was used in responsiveness design and extensively in debugging javascript functions. 
 * Lighthouse in Chrome Developer Tools was used to check performance and picked up some early contrast errors in colour choice so colours were adjusted accordingly. 
 
-![alt-text](readImg/lighthouse.png)
+![alt-text](readme/images/lighthouse.png)
 
 ### Responsiveness
 The website was tested primarily on Chrome through the design phase. Additional testing was conducted on Mozilla, Edge and Safari browsers with no problems found and good performance. 
 * Mozilla: 
-![alt-text](readImg/mozila.png)
+![alt-text](readme/images/mozila.png)
 
 * IE(Internet Explorer)
-![alt-text](readImg/ie.png)
+![alt-text](readme/images/ie.png)
 
 The website was tested on numerous sized screens including iPhones 8 and X, Moto G8 plus, 15" laptop, 24" screen and iPad and was found to respond as expected to all sizes.
 Chrome developer tools were used throughout the design process to check responsiveness and breakpoints. Adjustments were made accordingly. Final testing was done on physical devices as they are the most reliable test.
 
-![alt-text](readImg/ios.png)
+![alt-text](readme/images/ios.png)
 
-![alt-text](readImg/motorola.png)
+![alt-text](readme/images/motorola.png)
 
 
 
@@ -257,20 +257,20 @@ As the site owner I want to:
 
 The quiz was tested by a variety of friends and family who complimented the look of the quiz and enjoyed playing answering the questions. They found it to be fun and would enjoy playing it again.
 
-![alt-text](readImg/homepage.png)
+![alt-text](readme/images/homepage.png)
 
 As a general user I want to:
 1. play a fun quiz
 
 The welcome page is brightly coloured inspires a positive emotional reponse in users and they anticipate a fun quiz. The title is prominent and clearly shows the topic of the quiz. The theme is comprehensively supported by the colours. The large go to quiz call to action button invites users to start the quiz. 
 
-![alt-text](readImg/mobile.png)
+![alt-text](readme/images/mobile.png)
 
 2. navigate easily around the application
 
 Navigation buttons are clearly displayed on each page. The icons are styled in keeping with the dizzy theme and are minimal which keeps the user flow through the site clear. On the home page there is one call to action button prominently displayed which links to the quiz page and invites the user to start the quiz.
 
-![alt-text](readImg/home.png)
+![alt-text](readme/images/home.png)
 
 
 ## Manual Testing
@@ -334,11 +334,9 @@ In order to fork the repository to make a copy the steps are:
 
 1. On [GitHub](https://github.com/) navigate to the main page of the repository
 2. Above the list of files click the dropdown code menu
-3. Select the https option and copy the link 
-4. Open the GitPod Bash terminal
-5. Change the current working directory to the desired destination location
-6. Type the git clone command with the copied URL: git clone https://github.com/Dee68/milestone_project2.git
-7. Press enter to create the local clone
+3. Select the download zip link and click
+4. unzip downloaded zip folder
+5. open index.html file from unzipped folder in a browser.
 
 ## Credits
 

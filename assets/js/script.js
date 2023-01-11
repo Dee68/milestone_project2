@@ -60,17 +60,15 @@ function userRegistration() {
     rules.classList.add('inactive');
 }
 
-
 function validateName() {
     let regEx = /^[A-Za-z]+$/;
     if (username.value == '' || !(username.value.match(regEx))) {
         msg.classList.add('alert');
         username.focus();
         return false;
-
-    } else {
-        return true;
     }
+
+    return true;
 }
 
 
@@ -107,7 +105,7 @@ function countTime(timer) {
 }
 
 function loadQuestion(index) {
-    questNum.innerHTML = `${dzQuiz[qlevel][index].num +'.'}`;
+    questNum.innerHTML = `${dzQuiz[qlevel][index].num + '.'}`;
     questText.innerHTML = `${dzQuiz[qlevel][index].question}`;
     answer1.innerHTML = `${dzQuiz[qlevel][index].choices[0]}`;
     answer2.innerHTML = `${dzQuiz[qlevel][index].choices[1]}`;
@@ -170,7 +168,7 @@ function nextQuestion() {
     if (qlevel == 0 && correctAnswer >= 5) {
         face.innerHTML = `<i class="fas fa-trophy"></i>`;
         info.innerHTML = `Hi ${user}, congratulations you are good to go to the next level`;
-        points.innerHTML = `You got ${correctAnswer} out of ${(qlevel+1)*10}`;
+        points.innerHTML = `You got ${correctAnswer} out of ${(qlevel + 1) * 10}`;
         if (qlevel == 0) {
             nextlevel.style.display = 'block';
             exBtn.style.display = 'block';
@@ -180,14 +178,14 @@ function nextQuestion() {
     } else if (qlevel == 1 && correctAnswer >= 10) {
         face.innerHTML = `<i class="fas fa-trophy"></i>`;
         info.innerHTML = `Hi ${user}, congratulations you are good.`;
-        points.innerHTML = `You got ${correctAnswer} out of ${(qlevel+1)*10}`;
+        points.innerHTML = `You got ${correctAnswer} out of ${(qlevel + 1) * 10}`;
         exBtn.style.display = 'block';
         playAgain.style.display = 'none';
         nextlevel.style.display = 'none';
     } else {
         face.innerHTML = `<i class="fas fa-meh-rolling-eyes"></i>`;
         info.innerHTML = `Hi ${user}, sorry you need to brush up your skills and try again.`;
-        points.innerHTML = `You got ${correctAnswer} out of ${(qlevel+1)*10}`;
+        points.innerHTML = `You got ${correctAnswer} out of ${(qlevel + 1) * 10}`;
         exBtn.style.display = 'block';
         playAgain.style.display = 'block';
         nextlevel.style.display = 'none';
