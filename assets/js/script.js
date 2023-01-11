@@ -41,8 +41,10 @@ localStorage.setItem('correctAnswer', 0);
 
 qlevel = level[0];
 
-
-
+/**
+ * Displays the second level
+ *  of the quiz
+ */
 function quizLevel2() {
     feedBack.classList.remove('reveal');
     quiz.classList.add('active');
@@ -54,12 +56,18 @@ function quizLevel2() {
     loadQuestion(index);
     questCounter(questC);
 }
-
+/**
+ * Displays the registration form.
+ * 
+ */
 function userRegistration() {
     userReg.classList.add('show');
     rules.classList.add('inactive');
 }
-
+/**
+ * Validates the username input
+ * in the form for strictly alphabets only.
+ */
 function validateName() {
     let regEx = /^[A-Za-z]+$/;
     if (username.value == '' || !(username.value.match(regEx))) {
@@ -70,10 +78,10 @@ function validateName() {
 
     return true;
 }
-
-
-
-
+/**
+ * Displays the first level
+ * of the quiz.
+ */
 function goQuiz() {
     welcome.classList.remove('active');
     quiz.classList.add('active');
@@ -81,12 +89,18 @@ function goQuiz() {
     loadQuestion(index);
     questCounter(questC);
 }
-
+/**
+ * Displays the number of current question
+ * of all questions.
+ */
 function questCounter(questC) {
     let qTag = `<span><p>${questC++}</p> <span><p>of </p></span><p>${dzQuiz[qlevel].length}</p><span><p>Questions</p></span>`;
     totalQ.innerHTML = qTag;
 }
-
+/**
+ * Displays the time counter.
+ * 
+ */
 function countTime(timer) {
     counter = setInterval(timmer, 1000);
 
@@ -103,7 +117,10 @@ function countTime(timer) {
         }
     }
 }
-
+/**
+ * Displays each question with its answer options.
+ * 
+ */
 function loadQuestion(index) {
     questNum.innerHTML = `${dzQuiz[qlevel][index].num + '.'}`;
     questText.innerHTML = `${dzQuiz[qlevel][index].question}`;
@@ -160,7 +177,11 @@ options.forEach(function (option) {
 
     });
 });
-
+/**
+ * Handles successive display of question with its
+ * answer options and displays feedback on getting
+ * to end of questions
+ */
 function nextQuestion() {
     const user = localStorage.getItem('username');
     const correctAnswer = localStorage.getItem('correctAnswer');
@@ -205,7 +226,10 @@ function nextQuestion() {
 
     }
 }
-
+/**
+ * Restarts the quiz with a zero 
+ * score assigned to user's score.
+ */
 function startAgain() {
     feedBack.classList.remove('reveal');
     rules.classList.remove('inactive');

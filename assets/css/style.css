@@ -852,8 +852,10 @@ h3 {
     #quiz .quiz-box #timer-sec {
         margin: 2px 0 0 45px;
     }
-
-    #feed-back h4 {
+    .flash {
+        width: 80%;
+    }
+    .flash h4 {
         width: 80%;
         font-size: 15px;
     }
@@ -896,6 +898,13 @@ h3 {
 
     .tests {
         width: 90%;
+    }
+    .flash {
+        width: 80%;
+    }
+    .flash h4 {
+        width: 80%;
+        font-size: 15px;
     }
 }
 
